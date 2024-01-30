@@ -32,110 +32,110 @@
   </g>
   <style data-made-with="vivus-instant">
     .animate-opacity{
-      animation: 1.8s ease 5s forwards opac
+      animation: 1.8s ease 2s forwards opac
     }
     @keyframes opac{from{opacity:0} to{opacity:1}}
     .chzhWrgE_0{
       stroke-dasharray:146 148;
       stroke-dashoffset:147;
-      animation:chzhWrgE_draw_0 6200ms ease 0ms, chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_0 3100ms ease 0ms, chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_1{
       stroke-dasharray:167 169;
       stroke-dashoffset:168;
-      animation:chzhWrgE_draw_1 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_1 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_2{
       stroke-dasharray:134 136;
       stroke-dashoffset:135;
-      animation:chzhWrgE_draw_2 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_2 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_3{
       stroke-dasharray:212 214;
       stroke-dashoffset:213;
-      animation:chzhWrgE_draw_3 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_3 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_4{
       stroke-dasharray:289 291;
       stroke-dashoffset:290;
-      animation:chzhWrgE_draw_4 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_4 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_5{
       stroke-dasharray:208 210;
       stroke-dashoffset:209;
-      animation:chzhWrgE_draw_5 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_5 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_6{
       stroke-dasharray:184 186;
       stroke-dashoffset:185;
-      animation:chzhWrgE_draw_6 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_6 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_7{
       stroke-dasharray:337 339;stroke-dashoffset:338;
-      animation:chzhWrgE_draw_7 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_7 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_8{
       stroke-dasharray:233 235;
       stroke-dashoffset:234;
-      animation:chzhWrgE_draw_8 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_8 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_9{
       stroke-dasharray:271 273;
       stroke-dashoffset:272;
-      animation:chzhWrgE_draw_9 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_9 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_10{
       stroke-dasharray:146 148;
       stroke-dashoffset:147;
-      animation:chzhWrgE_draw_10 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_10 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_11{
       stroke-dasharray:167 169;
       stroke-dashoffset:168;
-      animation:chzhWrgE_draw_11 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_11 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_12{
       stroke-dasharray:134 136;
       stroke-dashoffset:135;
-      animation:chzhWrgE_draw_12 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_12 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_13{
       stroke-dasharray:212 214;
       stroke-dashoffset:213;
-      animation:chzhWrgE_draw_13 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_13 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_14{
       stroke-dasharray:289 291;
       stroke-dashoffset:290;
-      animation:chzhWrgE_draw_14 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_14 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_15{
       stroke-dasharray:208 210;
       stroke-dashoffset:209;
-      animation:chzhWrgE_draw_15 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_15 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_16{
       stroke-dasharray:184 186;
       stroke-dashoffset:185;
-      animation:chzhWrgE_draw_16 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_16 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_17{
       stroke-dasharray:337 339;
       stroke-dashoffset:338;
-      animation:chzhWrgE_draw_17 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_17 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_18{
       stroke-dasharray:233 235;
       stroke-dashoffset:234;
-      animation:chzhWrgE_draw_18 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_18 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     .chzhWrgE_19{
       stroke-dasharray:271 273;
       stroke-dashoffset:272;
-      animation:chzhWrgE_draw_19 6200ms ease 0ms ,chzhWrgE_fade 6200ms linear 0ms ;
+      animation:chzhWrgE_draw_19 3100ms ease 0ms ,chzhWrgE_fade 3100ms linear 0ms ;
     }
     @keyframes chzhWrgE_draw{100%{stroke-dashoffset:0;}}
-    @keyframes chzhWrgE_fade{0%{stroke-opacity:1;}93.54838709677419%{stroke-opacity:1;}97%{stroke-opacity:0;}100%{stroke-opacity:0;}}
+    @keyframes chzhWrgE_fade{0%{stroke-opacity:1;}85%{stroke-opacity:1;}97%{stroke-opacity:0;}100%{stroke-opacity:0;}}
     @keyframes chzhWrgE_draw_0{12.903225806451612%{stroke-dashoffset: 147}61.29032258064516%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}
     @keyframes chzhWrgE_draw_1{13.752122241086587%{stroke-dashoffset: 168}62.13921901528013%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}
     @keyframes chzhWrgE_draw_2{14.601018675721564%{stroke-dashoffset: 135}62.98811544991511%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}
