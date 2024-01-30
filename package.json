@@ -17,6 +17,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.12.3"
+    "@nuxt/ui": "^2.12.3",
+    "swiper": "^11.0.5"
   }
 }

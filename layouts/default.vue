@@ -1,6 +1,6 @@
 <template>
     <slot />
-    <div class="absolute top-0 w-full">
+    <div class="absolute top-0 w-full z-10">
         <div class="w-[1200px] m-auto">
             <div class="w-[1200px] h-screen flex items-center justify-center absolute resizeLogo">
                 <img class="w-1/2" src="~/assets/logoSchiling_animated.svg">

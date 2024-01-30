@@ -1,6 +1,6 @@
 
 <template>
-    <div class="w-full flex justify-center bg-black/60 h-16 navbar slideIn backdrop-blur-sm	border-y-1 border-black/10">
+    <div class="w-full flex justify-center bg-black/60 h-16 navbar slideIn backdrop-blur-sm	border-y-1 border-black/10 z-20">
         <div class="w-[1200px] m-auto flex flex-row justify-between items-center">
             <div class="ml-40">
                 <div class="font-['Lexend'] text-4xl text-primary-400 font-bold tracking-wider">

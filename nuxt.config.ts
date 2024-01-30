@@ -11,5 +11,5 @@ export default defineNuxtConfig({
   ui: {
     icons: ['mdi']
   },
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 })
