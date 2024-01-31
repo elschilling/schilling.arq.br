@@ -11,10 +11,10 @@ export default defineNuxtConfig({
   ui: {
     icons: ['mdi']
   },
-  vue: {  
-    compilerOptions: {
-      isCustomElement: (tag) => tag.startsWith('swiper-'),
-    },
-  },
+  // vue: {  
+  //   compilerOptions: {
+  //     isCustomElement: (tag) => tag.startsWith('swiper-'),
+  //   },
+  // },
   devtools: { enabled: false },
 })
