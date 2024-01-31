@@ -3,6 +3,7 @@
 
     </main> -->
     <swiper-container
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
         loop="true"
         :slides-per-view="1"
         :navigation="true"
@@ -19,7 +20,7 @@
         <swiper-slide class="bg-[url('~/assets/juliano.webp')] bg-center bg-cover"></swiper-slide>
         <swiper-slide class="bg-[url('~/assets/lucas.webp')] bg-center bg-cover"></swiper-slide>
     </swiper-container>
-    <div>Serviços</div>
+    <!-- <div>Serviços</div> -->
 
 </template>
 

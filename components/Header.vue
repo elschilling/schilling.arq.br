@@ -1,38 +1,61 @@
 
 <template>
-    <div class="w-full flex justify-center bg-black/60 h-16 navbar slideIn backdrop-blur-sm	border-y-1 border-black/10 z-20">
-        <div class="w-[1200px] m-auto flex flex-row justify-between items-center">
-            <div class="ml-40">
-                <div class="font-['Lexend'] text-4xl text-primary-400 font-bold tracking-wider">
-                    SCHILLING
+    <div>
+        <div class="w-full flex justify-center h-12 navbar border-y-1 border-black/10 z-20 bg-black/60 backdrop-blur-sm slideIn">
+            <div class="w-[1200px] m-auto flex flex-row justify-between items-center">
+                <div class="ml-24">
+                    <div class="font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider -mt-2">
+                        SCHILLING
+                    </div>
+                    <div class="font-['Lexend'] text-sm text-logo-vermelho tracking-[.96em] -mt-2">
+                        arquitetos
+                    </div>
                 </div>
-                <div class="font-['Lexend'] font-extralight text-xl text-logo-vermelho tracking-[.68em] -mt-2 ml-1">
-                    arquitetos
+                <div class="hidden lg:block">
+                    <ul class="flex flex-row font-['Lexend'] text-zinc-200 tracking-widest">
+                        <li class="px-5">PROJETOS</li>
+                        <li class="px-5">SERVIÇOS</li>
+                        <li class="px-5">CONTATO</li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <ul class="flex flex-row font-['Lexend'] text-xl text-zinc-400">
-                    <li class="p-4">PROJETOS</li>
-                    <li class="p-4">SERVIÇOS</li>
-                    <li class="p-4">OBRAS</li>
-                    <li class="p-4">CONTATO</li>
-                </ul>
-            </div>
-            <div class="h-full">
-                <UButton
-                    :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
-                    @click="isDark = !isDark"
-                    variant="ghost"
-                    aria-label="Theme"
-                />
-                <UButton
-                    icon="i-mdi-instagram"
-                    variant="ghost"
-                />
+                <div class="items-center flex -mt-1">
+                    <UButton
+                        label="OBRAS"
+                        class="font-['Lexend']"
+                    />
+                    <UButton
+                        :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
+                        @click="isDark = !isDark"
+                        variant="ghost"
+                        aria-label="Theme"
+                    />
+                    <UButton
+                        icon="i-mdi-instagram"
+                        variant="ghost"
+                    />
+                    <UButton
+                        :icon="isOpen ? 'i-mdi-close' : 'i-mdi-hamburger-menu'"
+                        variant="ghost"
+                        @click="isOpen = !isOpen"
+                        class="lg:hidden"
+                    />
+                </div>
             </div>
         </div>
-    </div>
+        <div v-if="isOpen" class="bg-black/60 backdrop-blur-sm mt-3 font-['Lexend'] text-zinc-200 tracking-widest">
+            <a href="#" class="p-3 block hover:bg-black rounded">PROJETOS</a>
+            <a href="#" class="p-3 block hover:bg-black rounded">SERVIÇOS</a>
+            <a href="#" class="p-3 block hover:bg-black rounded">CONTATO</a>
+            <a href="#" class="p-3 block hover:bg-black rounded">OBRAS</a>
+        </div>
+    </div>    
 </template>
+
+<script setup>
+let isOpen = ref(false)
+let isDark = ref(false)
+
+</script>
 
 <style>
 .navbar {
@@ -50,4 +73,3 @@
     }
 }
 </style>
-
