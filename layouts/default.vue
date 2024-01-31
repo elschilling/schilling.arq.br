@@ -18,12 +18,23 @@
 @keyframes resize {
     from {
         height: 100vh;
-        width: 100%;
+        width: var(--logo-width);
     }
     to {
         height: 4rem;
         width: 160px;
         transform: translateY(5px) translateX(-30px);
+    }
+}
+
+@media(min-width:1200px) {
+    :root {
+        --logo-width: 1200px;
+    }
+}
+@media(max-width:1200px) {
+    :root {
+        --logo-width: 100%;
     }
 }
 </style>
