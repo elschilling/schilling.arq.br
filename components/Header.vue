@@ -21,7 +21,7 @@
                 <div class="items-center flex -mt-1">
                     <UButton
                         label="OBRAS"
-                        class="font-['Lexend']"
+                        class="font-['Lexend'] hidden lg:block"
                     />
                     <UButton
                         :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'"
