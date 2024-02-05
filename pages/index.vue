@@ -14,7 +14,7 @@
             delay: 2500,
             disableOnInteraction: false,
         }"
-        class="h-screen w-full top-0 fadeIn opacity-0"
+        class="h-dvh w-full top-0 fadeIn opacity-0"
     >
         <swiper-slide class="bg-[url('~/assets/itagiba.webp')] bg-center bg-cover"></swiper-slide>
         <swiper-slide class="bg-[url('~/assets/juliano.webp')] bg-center bg-cover"></swiper-slide>

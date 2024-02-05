@@ -18,7 +18,7 @@
                         <li class="px-5">CONTATO</li>
                     </ul>
                 </div>
-                <div class="items-center flex -mt-1">
+                <div class="items-center flex -mt-1 pr-2">
                     <UButton
                         label="OBRAS"
                         class="font-['Lexend'] hidden lg:block"
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div v-if="isOpen" class="bg-black/60 backdrop-blur-sm mt-3 font-['Lexend'] text-zinc-200 tracking-widest">
+        <div :class="isOpen ? 'block' : 'hide'" class="bg-black/60 backdrop-blur-sm mt-3 font-['Lexend'] text-zinc-200 tracking-widest transition-opacity duration-300 text-end">
             <a href="#" class="p-3 block hover:bg-black rounded">PROJETOS</a>
             <a href="#" class="p-3 block hover:bg-black rounded">SERVIÇOS</a>
             <a href="#" class="p-3 block hover:bg-black rounded">CONTATO</a>
@@ -71,5 +71,8 @@ let isDark = ref(false)
     to{
         transform: translateY(1rem);
     }
+}
+.hide {
+    opacity: 0;
 }
 </style>
