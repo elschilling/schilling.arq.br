@@ -10,6 +10,7 @@
         :pagination="true"
         :centered-slides="true"
         :effect="'fade'"
+        speed = 3000
         :autoplay="{
             delay: 2500,
             disableOnInteraction: false,
