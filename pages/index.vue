@@ -1,7 +1,4 @@
 <template>
-    <!-- <main class="h-screen w-full top-0 -z-10 bg-[url('~/assets/itagiba.webp')] bg-center bg-cover fadeIn opacity-0">
-
-    </main> -->
     <swiper-container
         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
         loop="true"
@@ -21,8 +18,17 @@
         <swiper-slide class="bg-[url('~/assets/juliano.webp')] bg-center bg-cover"></swiper-slide>
         <swiper-slide class="bg-[url('~/assets/lucas.webp')] bg-center bg-cover"></swiper-slide>
     </swiper-container>
-    <!-- <div>Serviços</div> -->
-
+    <div class="avida w-[1000px] bg-stone-950 m-auto font-['Lexend'] p-10 text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn ">
+        <p class="py-5">
+            A vida é feita de <span class="font-bold">sonhos</span>. Uns modestos, outros normais e ainda os arrojados.
+        </p>
+        <p class="py-5">
+            O <span class="font-bold">nosso</span> maior sonho é, através de nossos projetos e construções, materializar e ajudar a concretizar os sonhos das pessoas, casais, famílias ou coletividades.
+        </p>
+        <p class="py-5">
+            Permita que, com o nosso trabalho, experiência, competência e dedicação sejamos um pouco responsáveis pela vossa <span class="font-bold">felicidade</span>.
+        </p>
+    </div>
 </template>
 
 <script setup>
@@ -35,11 +41,18 @@ register()
     animation: fade 2s ease 3s forwards; 
 }
 @keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.avida {
+    opacity: 0;
+    animation: reveal linear;
+    animation-timeline: scroll();
+}
+
+@keyframes reveal {
+    from {scale: .1; opacity: 0;}
+    to {scale: 1; opacity: 1;}
 }
 </style>
