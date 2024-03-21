@@ -35,17 +35,33 @@
         </div>    
 
         <div class="bg-red-400/50 row-full">
-            <div class="w-full xl:w-[1200px]  m-auto p-5">
-                <Card />
-                <p>lalalalal</p>
-                
+            <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-row place-content-evenly">
+                <Card title="PROJETOS" icon="/icons/icone-projetos.svg">
+                    <p class="text-center">Arquitetônicos<br>
+                    Simplificados<br>
+                    Estruturais<br>
+                    Elétricos<br>
+                    Hidrossanitários<br>
+                    Urbanísticos</p>
+                </Card>
+                <Card title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg">
+                    <p class="text-center">Tramitação e acompanhamento da aprovação de projetos residenciais, comerciais, industriais e rurais nos órgãos competentes.</p>
+                </Card>
+                <Card title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg">
+                    <p class="text-center">Indicação de equipes de construtores e prestadores de serviços que trabalham afinados com nossa filosofia de trabalho.</p>
+                </Card>
+                <Card title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg">
+                    <p class="text-center">Modelagem e produção de maquetes digitais ilustrativas/fotorrealistas. Imagens estáticas e animações. Experiências interativas.</p>
+                </Card>
+                <Card title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg">
+                    <p class="text-center">Administração, fiscalização e responsabilidade técnica de projetos com acompanhamento e assessoria na compra de todo e qualquer tipo de material.</p>
+                </Card>
             </div>
         </div>
 
     </div>
 
 </template>
-
 <script setup>
 import { register } from 'swiper/element/bundle'
 register()
