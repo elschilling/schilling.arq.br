@@ -36,8 +36,9 @@
 
         <div class="bg-red-400/50 row-full">
             <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">SERVIÇOS</p>
-            <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
-                <SCard title="PROJETOS" icon="/icons/icone-projetos.svg">
+            <div id="list-view" class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
+                <SCard title="PROJETOS" icon="/icons/icone-projetos.svg"
+                    class="scard">
                     <p class="text-center">Arquitetônicos<br>
                     Simplificados<br>
                     Estruturais<br>
@@ -45,16 +46,16 @@
                     Hidrossanitários<br>
                     Urbanísticos</p>
                 </SCard>
-                <SCard title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg">
+                <SCard title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg" class="scard2">
                     <p class="text-center">Tramitação e acompanhamento da aprovação de projetos residenciais, comerciais, industriais e rurais nos órgãos competentes.</p>
                 </SCard>
-                <SCard title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg">
+                <SCard title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg" class="scard3">
                     <p class="text-center">Indicação de equipes de construtores e prestadores de serviços que trabalham afinados com nossa filosofia de trabalho.</p>
                 </SCard>
-                <SCard title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg">
+                <SCard title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg" class="scard4">
                     <p class="text-center">Modelagem e produção de maquetes digitais ilustrativas/fotorrealistas. Imagens estáticas e animações. Experiências interativas.</p>
                 </SCard>
-                <SCard title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg">
+                <SCard title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg" class="scard5">
                     <p class="text-center">Administração, fiscalização e responsabilidade técnica de projetos com acompanhamento e assessoria na compra de todo e qualquer tipo de material.</p>
                 </SCard>
             </div>
@@ -65,20 +66,20 @@
             <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
                 <CCard 
                     name="Waldemar Luiz Schilling"
-                    title="arquiteto e urbanista"
                     photo="/contatos/waldemar.jpg"
                     crea="XXXXXXXXXXXXXXXXX"
                     cau="XXXXXXXXXXXXXXXXX"
                     inmemorian="true"
                     >
+                    arquiteto e urbanista
                 </CCard>
                 <CCard 
                     name="Vera Lucia Schilling"
-                    title="arquiteta e urbanista"
                     photo="/contatos/vera.jpg"
                     crea="XXXXXXXXXXXXXXXXX"
                     cau="XXXXXXXXXXXXXXXXX"
                     >
+                    arquiteta e urbanista
                 </CCard>
                 <CCard 
                     name="Eduardo Luiz Schilling"
@@ -86,13 +87,14 @@
                     photo="/contatos/eduardo.jpg"
                     cau="XXXXXXXXXXXXXXXXX"
                     >
+                    arquiteto e urbanista<br>químico
                 </CCard>
                 <CCard 
                     name="Mauro Santos"
-                    title="engenheiro civil"
                     photo="/contatos/mauro.jpg"
                     crea="XXXXXXXXXXXXXXXXX"
                     >
+                    engenheiro civil
                 </CCard>
             </div>
         </div>
@@ -127,9 +129,12 @@ useHead({
 }
 
 .avida {
+    view-timeline-name: --revealing-image;
+	view-timeline-axis: block;
     opacity: 0;
-    animation: reveal linear;
-    animation-timeline: scroll();
+    animation: linear reveal both;
+	animation-timeline: --revealing-image;
+    animation-range: entry 5% cover 30%;
 }
 
 @keyframes reveal {
@@ -141,5 +146,111 @@ useHead({
 .row-full{
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
+}
+
+@keyframes animate-in-and-out {
+	entry 0%  {
+		opacity: 0; transform: translateY(100%);
+	}
+	entry 60%  {
+		opacity: 1; transform: translateY(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 60% {
+		opacity: 0; transform: translateY(-100%);
+	}
+}
+
+.scard {
+	animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+@keyframes animate-in-and-out2 {
+	entry 0%  {
+		opacity: 0; transform: translateY(100%);
+	}
+	entry 70%  {
+		opacity: 1; transform: translateY(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 70% {
+		opacity: 0; transform: translateY(-100%);
+	}
+}
+
+.scard2 {
+	animation: linear animate-in-and-out2;
+	animation-timeline: view();
+}
+
+
+@keyframes animate-in-and-out2 {
+	entry 0%  {
+		opacity: 0; transform: translateY(100%);
+	}
+	entry 80%  {
+		opacity: 1; transform: translateY(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 80% {
+		opacity: 0; transform: translateY(-100%);
+	}
+}
+
+.scard3 {
+	animation: linear animate-in-and-out2;
+	animation-timeline: view();
+}
+
+@keyframes animate-in-and-out2 {
+	entry 0%  {
+		opacity: 0; transform: translateY(100%);
+	}
+	entry 90%  {
+		opacity: 1; transform: translateY(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 90% {
+		opacity: 0; transform: translateY(-100%);
+	}
+}
+
+.scard4 {
+	animation: linear animate-in-and-out2;
+	animation-timeline: view();
+}
+
+@keyframes animate-in-and-out2 {
+	entry 0%  {
+		opacity: 0; transform: translateY(100%);
+	}
+	entry 100%  {
+		opacity: 1; transform: translateY(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 100% {
+		opacity: 0; transform: translateY(-100%);
+	}
+}
+
+.scard5 {
+	animation: linear animate-in-and-out2;
+	animation-timeline: view();
 }
 </style>
