@@ -19,9 +19,9 @@
         <swiper-slide class="bg-[url('~/assets/lucas.webp')] bg-center bg-cover"></swiper-slide>
     </swiper-container>
 
-    <div class="w-full xl:w-[1200px] bg-stone-950 m-auto font-['Lexend'] p-10 text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn ">
+    <div class="w-full xl:w-[1200px] bg-stone-950/80 m-auto font-['Lexend'] p-10 text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn ">
   
-        <div class="avida">
+        <div class="avida pb-10">
             <p class="py-5">
                 A vida é feita de <span class="font-bold">sonhos</span>. Uns modestos, outros normais e ainda os arrojados.
             </p>
@@ -35,29 +35,70 @@
         </div>    
 
         <div class="bg-red-400/50 row-full">
-            <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-row place-content-evenly">
-                <Card title="PROJETOS" icon="/icons/icone-projetos.svg">
+            <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">SERVIÇOS</p>
+            <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
+                <SCard title="PROJETOS" icon="/icons/icone-projetos.svg">
                     <p class="text-center">Arquitetônicos<br>
                     Simplificados<br>
                     Estruturais<br>
                     Elétricos<br>
                     Hidrossanitários<br>
                     Urbanísticos</p>
-                </Card>
-                <Card title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg">
+                </SCard>
+                <SCard title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg">
                     <p class="text-center">Tramitação e acompanhamento da aprovação de projetos residenciais, comerciais, industriais e rurais nos órgãos competentes.</p>
-                </Card>
-                <Card title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg">
+                </SCard>
+                <SCard title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg">
                     <p class="text-center">Indicação de equipes de construtores e prestadores de serviços que trabalham afinados com nossa filosofia de trabalho.</p>
-                </Card>
-                <Card title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg">
+                </SCard>
+                <SCard title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg">
                     <p class="text-center">Modelagem e produção de maquetes digitais ilustrativas/fotorrealistas. Imagens estáticas e animações. Experiências interativas.</p>
-                </Card>
-                <Card title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg">
+                </SCard>
+                <SCard title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg">
                     <p class="text-center">Administração, fiscalização e responsabilidade técnica de projetos com acompanhamento e assessoria na compra de todo e qualquer tipo de material.</p>
-                </Card>
+                </SCard>
             </div>
         </div>
+
+        <div class="bg-[#076c53]/30 row-full mt-20">
+            <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">CONTATOS</p>
+            <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
+                <CCard 
+                    name="Waldemar Luiz Schilling"
+                    title="arquiteto e urbanista"
+                    photo="/contatos/waldemar.jpg"
+                    crea="XXXXXXXXXXXXXXXXX"
+                    cau="XXXXXXXXXXXXXXXXX"
+                    inmemorian="true"
+                    >
+                </CCard>
+                <CCard 
+                    name="Vera Lucia Schilling"
+                    title="arquiteta e urbanista"
+                    photo="/contatos/vera.jpg"
+                    crea="XXXXXXXXXXXXXXXXX"
+                    cau="XXXXXXXXXXXXXXXXX"
+                    >
+                </CCard>
+                <CCard 
+                    name="Eduardo Luiz Schilling"
+                    title="arquiteto e urbanista"
+                    photo="/contatos/eduardo.jpg"
+                    cau="XXXXXXXXXXXXXXXXX"
+                    >
+                </CCard>
+                <CCard 
+                    name="Mauro Santos"
+                    title="engenheiro civil"
+                    photo="/contatos/mauro.jpg"
+                    crea="XXXXXXXXXXXXXXXXX"
+                    >
+                </CCard>
+            </div>
+        </div>
+
+
+
 
     </div>
 
@@ -92,7 +133,7 @@ useHead({
 }
 
 @keyframes reveal {
-    from {scale: .1; opacity: 0;}
+    from {scale: .5; opacity: 0;}
     to {scale: 1; opacity: 1;}
 }
 
