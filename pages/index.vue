@@ -34,11 +34,11 @@
   
         </div>    
 
-        <div class="bg-red-400/50 row-full">
+        <div class="bg-red-400/50 row-full faixa">
             <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">SERVIÇOS</p>
-            <div id="list-view" class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
+            <div id="cards" class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
                 <SCard title="PROJETOS" icon="/icons/icone-projetos.svg"
-                    class="scard">
+                    class="card">
                     <p class="text-center">Arquitetônicos<br>
                     Simplificados<br>
                     Estruturais<br>
@@ -46,25 +46,26 @@
                     Hidrossanitários<br>
                     Urbanísticos</p>
                 </SCard>
-                <SCard title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg" class="scard2">
+                <SCard title="APROVAÇÃO" icon="/icons/icone-aprovacao.svg" class="card">
                     <p class="text-center">Tramitação e acompanhamento da aprovação de projetos residenciais, comerciais, industriais e rurais nos órgãos competentes.</p>
                 </SCard>
-                <SCard title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg" class="scard3">
+                <SCard title="MÃO DE OBRA" icon="/icons/icone-maodeobra.svg" class="card">
                     <p class="text-center">Indicação de equipes de construtores e prestadores de serviços que trabalham afinados com nossa filosofia de trabalho.</p>
                 </SCard>
-                <SCard title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg" class="scard4">
+                <SCard title="VISUALIZAÇÃO" icon="/icons/icone-visualizacao.svg" class="card">
                     <p class="text-center">Modelagem e produção de maquetes digitais ilustrativas/fotorrealistas. Imagens estáticas e animações. Experiências interativas.</p>
                 </SCard>
-                <SCard title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg" class="scard5">
+                <SCard title="ADMINISTRAÇÃO" icon="/icons/icone-adm.svg" class="card">
                     <p class="text-center">Administração, fiscalização e responsabilidade técnica de projetos com acompanhamento e assessoria na compra de todo e qualquer tipo de material.</p>
                 </SCard>
             </div>
         </div>
 
-        <div class="bg-[#076c53]/30 row-full mt-20">
+        <div class="bg-[#076c53]/30 row-full mt-20 faixa">
             <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">CONTATOS</p>
             <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
                 <CCard 
+                    class="card"
                     name="Waldemar Luiz Schilling"
                     photo="/contatos/waldemar.jpg"
                     crea="XXXXXXXXXXXXXXXXX"
@@ -74,6 +75,7 @@
                     arquiteto e urbanista
                 </CCard>
                 <CCard 
+                    class="card"
                     name="Vera Lucia Schilling"
                     photo="/contatos/vera.jpg"
                     crea="XXXXXXXXXXXXXXXXX"
@@ -82,6 +84,7 @@
                     arquiteta e urbanista
                 </CCard>
                 <CCard 
+                    class="card"
                     name="Eduardo Luiz Schilling"
                     title="arquiteto e urbanista"
                     photo="/contatos/eduardo.jpg"
@@ -90,6 +93,7 @@
                     arquiteto e urbanista<br>químico
                 </CCard>
                 <CCard 
+                    class="card"
                     name="Mauro Santos"
                     photo="/contatos/mauro.jpg"
                     crea="XXXXXXXXXXXXXXXXX"
@@ -99,7 +103,9 @@
             </div>
         </div>
 
-
+        <div class="mt-20 card">
+            <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729.4691601809969!2d-46.97220956946711!3d-23.033050040716486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2d67f436670b%3A0x2d9bc4f09004fe7a!2sR.%20dos%20Vereadores%2C%2040%20-%20Barra%20Funda%2C%20Vinhedo%20-%20SP%2C%2013280-000!5e1!3m2!1spt-BR!2sbr!4v1711203117422!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
 
     </div>
@@ -148,109 +154,38 @@ useHead({
     margin-right: calc(50% - 50vw);
 }
 
+.card {
+    animation: linear animate-in-and-out both;
+    animation-range: entry 5% cover 20%;
+	animation-timeline: view(block);
+}
+
+.faixa {
+    animation: linear faixa-animate both;
+    animation-range: entry 5% cover 20%;
+    animation-timeline: view(block);
+}
+
+@keyframes faixa-animate {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
 @keyframes animate-in-and-out {
-	entry 0%  {
-		opacity: 0; transform: translateY(100%);
-	}
-	entry 60%  {
-		opacity: 1; transform: translateY(0);
-	}
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        transform: scale(1);
 
-	exit 0% {
-		opacity: 1; transform: translateY(0);
-	}
-	exit 60% {
-		opacity: 0; transform: translateY(-100%);
-	}
-}
-
-.scard {
-	animation: linear animate-in-and-out;
-	animation-timeline: view();
-}
-
-@keyframes animate-in-and-out2 {
-	entry 0%  {
-		opacity: 0; transform: translateY(100%);
-	}
-	entry 70%  {
-		opacity: 1; transform: translateY(0);
-	}
-
-	exit 0% {
-		opacity: 1; transform: translateY(0);
-	}
-	exit 70% {
-		opacity: 0; transform: translateY(-100%);
-	}
-}
-
-.scard2 {
-	animation: linear animate-in-and-out2;
-	animation-timeline: view();
-}
-
-
-@keyframes animate-in-and-out2 {
-	entry 0%  {
-		opacity: 0; transform: translateY(100%);
-	}
-	entry 80%  {
-		opacity: 1; transform: translateY(0);
-	}
-
-	exit 0% {
-		opacity: 1; transform: translateY(0);
-	}
-	exit 80% {
-		opacity: 0; transform: translateY(-100%);
-	}
-}
-
-.scard3 {
-	animation: linear animate-in-and-out2;
-	animation-timeline: view();
-}
-
-@keyframes animate-in-and-out2 {
-	entry 0%  {
-		opacity: 0; transform: translateY(100%);
-	}
-	entry 90%  {
-		opacity: 1; transform: translateY(0);
-	}
-
-	exit 0% {
-		opacity: 1; transform: translateY(0);
-	}
-	exit 90% {
-		opacity: 0; transform: translateY(-100%);
-	}
-}
-
-.scard4 {
-	animation: linear animate-in-and-out2;
-	animation-timeline: view();
-}
-
-@keyframes animate-in-and-out2 {
-	entry 0%  {
-		opacity: 0; transform: translateY(100%);
-	}
-	entry 100%  {
-		opacity: 1; transform: translateY(0);
-	}
-
-	exit 0% {
-		opacity: 1; transform: translateY(0);
-	}
-	exit 100% {
-		opacity: 0; transform: translateY(-100%);
-	}
-}
-
-.scard5 {
-	animation: linear animate-in-and-out2;
-	animation-timeline: view();
+    }
 }
 </style>
