@@ -19,7 +19,7 @@
         <swiper-slide class="bg-[url('~/assets/lucas.webp')] bg-center bg-cover"></swiper-slide>
     </swiper-container>
 
-    <div class="w-full xl:w-[1200px] bg-stone-950/80 m-auto font-['Lexend'] p-10 text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn ">
+    <div class="w-full xl:w-[1200px] bg-stone-950/90 m-auto font-['Lexend'] p-10 text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn ">
   
         <div class="avida pb-10">
             <p class="py-5">
@@ -61,15 +61,15 @@
             </div>
         </div>
 
-        <div class="bg-[#076c53]/30 row-full mt-20 faixa">
+        <div class="bg-[#076c53]/30 row-full mt-20">
             <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">CONTATOS</p>
             <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
                 <CCard 
                     class="card"
                     name="Waldemar Luiz Schilling"
                     photo="/contatos/waldemar.jpg"
-                    crea="XXXXXXXXXXXXXXXXX"
-                    cau="XXXXXXXXXXXXXXXXX"
+                    crea="5061435925"
+                    cau="A0516-9"
                     inmemorian="true"
                     >
                     arquiteto e urbanista
@@ -78,8 +78,8 @@
                     class="card"
                     name="Vera Lucia Schilling"
                     photo="/contatos/vera.jpg"
-                    crea="XXXXXXXXXXXXXXXXX"
-                    cau="XXXXXXXXXXXXXXXXX"
+                    crea="5061747230"
+                    cau="A13144-0"
                     >
                     arquiteta e urbanista
                 </CCard>
@@ -96,7 +96,7 @@
                     class="card"
                     name="Mauro Santos"
                     photo="/contatos/mauro.jpg"
-                    crea="XXXXXXXXXXXXXXXXX"
+                    crea="0601524770"
                     >
                     engenheiro civil
                 </CCard>

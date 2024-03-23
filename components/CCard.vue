@@ -1,6 +1,6 @@
 <template>
-<div class="w-[212px] h-[290px] bg-black/60 rounded-b-[10px] mt-[120px] shadow-lg mix-blend-luminosity hover:mix-blend-normal transition-all ease-linear duration-0 hover:duration-500">
-    <img :src="props.photo" alt="" class="rounded-full -mt-[106px]">          
+<div class="w-[212px] h-[290px] bg-black/60 rounded-b-[10px] mt-[120px] mix-blend-luminosity hover:mix-blend-normal">
+    <img :src="props.photo" alt="" class="rounded-full -mt-[106px]">
     <div class="flex justify-center items-center text-white text-[16px] font-normal tracking-normal">
         {{ props.name }}
     </div>
