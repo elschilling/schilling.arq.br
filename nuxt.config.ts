@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         Lexend: [100, 200, 400, 700]
         }
     }],
+    'nuxt-icon',
   ],
   ui: {
     icons: ['mdi']

@@ -64,7 +64,7 @@
         <div class="bg-[#076c53]/30 row-full mt-20">
             <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">CONTATOS</p>
             <div class="w-full xl:w-[1200px]  m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
-                <CCard 
+                <!-- <CCard 
                     class="card"
                     name="Waldemar Luiz Schilling"
                     photo="/contatos/waldemar.jpg"
@@ -73,7 +73,7 @@
                     inmemorian="true"
                     >
                     arquiteto e urbanista
-                </CCard>
+                </CCard> -->
                 <CCard 
                     class="card"
                     name="Vera Lucia Schilling"
@@ -88,7 +88,7 @@
                     name="Eduardo Luiz Schilling"
                     title="arquiteto e urbanista"
                     photo="/contatos/eduardo.jpg"
-                    cau="XXXXXXXXXXXXXXXXX"
+                    email="duda@schilling.arq.br"
                     >
                     arquiteto e urbanista<br>químico
                 </CCard>
