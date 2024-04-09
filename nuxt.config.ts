@@ -2,20 +2,27 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/ui',
-    ['@nuxtjs/google-fonts', {
-      families: {
-        Lexend: [100, 200, 400, 700]
-        }
-    }],
+    [
+      '@nuxtjs/google-fonts',
+      {
+        families: {
+          Lexend: [100, 200, 400, 700],
+        },
+      },
+    ],
     'nuxt-icon',
+    'nuxt-gtag',
   ],
   ui: {
-    icons: ['mdi']
+    icons: ['mdi'],
   },
-  // vue: {  
+  // vue: {
   //   compilerOptions: {
   //     isCustomElement: (tag) => tag.startsWith('swiper-'),
   //   },
   // },
   devtools: { enabled: false },
+  gtag: {
+    id: 'G-1XX6QLRVHJ',
+  },
 })
