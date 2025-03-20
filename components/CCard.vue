@@ -16,7 +16,7 @@
       </p>
     </div>
     <div class="flex flex-col justify-center items-center text-white text-[14px] font-extralight tracking-normal mt-5">
-      <!-- <p v-if="props.inmemorian" class="italic text-xl font-extralight">in memorian</p> -->
+      <p v-if="props.inmemorian" class="italic text-xl font-extralight">in memorian</p>
       <p v-if="props.email"><Icon name="ic:baseline-email" size="35px" /> {{ props.email }}</p>
       <p v-if="props.phone"><Icon name="i-ic-baseline-phone" size="35px" /> {{ props.phone }}</p>
     </div>
@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-const props = defineProps(['name', 'photo', 'cau', 'crea', 'email', 'phone'])
+const props = defineProps(['name', 'photo', 'cau', 'crea', 'email', 'phone', 'inmemorian'])
 
 function showTooltip(flag) {
   switch (flag) {

@@ -15,8 +15,10 @@
     class="h-dvh w-full top-0 fadeIn opacity-0"
   >
     <swiper-slide class="bg-[url('~/assets/itagiba.webp')] bg-center bg-cover"></swiper-slide>
+    <swiper-slide class="bg-[url('~/assets/juliano-fachada.webp')] bg-center bg-cover"></swiper-slide>
     <swiper-slide class="bg-[url('~/assets/juliano.webp')] bg-center bg-cover"></swiper-slide>
     <swiper-slide class="bg-[url('~/assets/lucas.webp')] bg-center bg-cover"></swiper-slide>
+    <swiper-slide class="bg-[url('~/assets/jorge.webp')] bg-center bg-cover"></swiper-slide>
   </swiper-container>
 
   <div
@@ -77,17 +79,10 @@
         Em nosso atelier e escritório colocamos a vossa disposição a nossa equipe composta por:
       </div>
       <div class="w-full xl:w-[1200px] m-auto p-5 flex flex-col justify-center items-center xl:flex-row xl:place-content-evenly">
-        <!-- <CCard 
-                    class="card"
-                    name="Waldemar Luiz Schilling"
-                    photo="/contatos/waldemar.jpg"
-                    crea="5061435925"
-                    cau="A0516-9"
-                    inmemorian="true"
-                    >
-                    arquiteto e urbanista
-                </CCard> -->
-        <CCard class="card" name="Vera Lucia Schilling" photo="/contatos/vera.jpg" crea="5061747230" cau="A13144-0" phone="19 9 9256 9265">
+        <CCard class="card" name="Waldemar Luiz Schilling" photo="/contatos/waldemar.jpg" crea="5061435925" cau="A0516-9" inmemorian="true">
+          arquiteto e urbanista
+        </CCard>
+        <CCard class="card" name="Vera Lucia Schilling" photo="/contatos/vera.jpg" crea="5061747230" cau="A13144-0" inmemorian="true">
           arquiteta e urbanista
         </CCard>
         <CCard
