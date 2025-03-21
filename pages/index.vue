@@ -163,6 +163,9 @@ useHead({
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
 .fadeIn {
   animation: fade 2s ease 3s forwards;
 }

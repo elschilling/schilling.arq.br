@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardo Luiz Schilling - Portfólio</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lexend', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      img-comparison-slider {
+        border-radius: 10px;
+        border: none;
+      }
+      img-comparison-slider img {
+        width: 100%;
+      }
+      .capa {
+        background: #ddd;
+        height: 100vh;
+        width: 100%;
+        color: #fff;
+      }
+      .capa-texto {
+        padding: 0px;
+        position: relative;
+        top: 70%;
+        text-align: right;
+      }
+      .capa-portfolio {
+        position: relative;
+        padding: 15px;
+        background: #555;
+        animation-name: slideRight;
+        animation-duration: 1s;
+      }
+      .capa-nome {
+        position: relative;
+        background: #222;
+        padding: 10px;
+        animation-name: slideLeft;
+        animation-duration: 1s;
+      }
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .container2 {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .contorno {
+        position: absolute;
+        left: 5%;
+        top: -350px;
+        max-width: 1300px;
+        min-width: 800px;
+        width: 80%;
+      }
+      .capa-projeto {
+        position: relative;
+        background: #555;
+        height: 100vh;
+        width: 100%;
+      }
+      .capa-projeto img {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        max-width: 750px;
+        width: 100%;
+      }
+      .projeto-nome {
+        color: #fff;
+        position: absolute;
+        text-align: right;
+        bottom: 300px;
+        background: #222;
+        padding: 10px 10% 10px 0;
+        width: 100%;
+        right: 0;
+      }
+      .pagina-branco {
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .pagina-branco img {
+        max-width: 1200px;
+        width: 100%;
+      }
+      .descricao {
+        width: 50%;
+        margin: 20px;
+        font-weight: 200;
+        line-height: 1.8;
+      }
+      .perfil {
+        margin: 50px;
+      }
+      .foto {
+        width: 200px;
+        border-radius: 50%;
+        filter: grayscale(100%);
+      }
+      .header-perfil {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .perfil-fundo {
+        background: #ddd;
+        padding: 10px;
+        font-weight: 300;
+        position: relative;
+        margin: 70px 0;
+        line-height: 1.8;
+      }
+      .perfil-titulo {
+        letter-spacing: 0.4rem;
+        position: absolute;
+        /* top: -100%; */
+        transform: translateY(-105%);
+        font-weight: 600;
+        font-size: large;
+      }
+      .contato p {
+        font-weight: 300;
+        display: flex;
+        padding: 5px;
+      }
+      .contato p img {
+        padding-right: 10px;
+      }
+      .container-software {
+        display: flex;
+        margin: 10px;
+      }
+      .nome-software {
+        text-align: right;
+        font-weight: 700;
+        width: 50%;
+      }
+      .skill {
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+      }
+      .skill p {
+        position: absolute;
+        font-size: smaller;
+        left: 5px;
+        top: -5px;
+      }
+      .skill-bar {
+        width: 50px;
+        height: 4px;
+        margin: 5px;
+      }
+      .skill-bar-on {
+        background: #222;
+      }
+      .skill-bar-off {
+        background: #fff;
+      }
+      .slide-x-r {
+        animation: linear slide-x-r both;
+        animation-range: entry 5% cover 30%;
+        animation-timeline: view(block);
+      }
+      .slide-x-l {
+        animation: linear slide-x-l both;
+        animation-range: entry 5% cover 30%;
+        animation-timeline: view(block);
+      }
+      .slide-y {
+        animation: linear slide-y both;
+        animation-range: entry 20% cover 30%;
+        animation-timeline: view(block);
+      }
+      @keyframes slideRight {
+        0% {
+          left: -100%;
+        }
+        100% {
+          left: 0px;
+        }
+      }
+
+      @keyframes slideLeft {
+        0% {
+          right: -100%;
+        }
+        100% {
+          right: 0px;
+        }
+      }
+      @keyframes slide-x-r {
+        from {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slide-x-l {
+        from {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes slide-y {
+        from {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .contorno {
+          left: -160px;
+          top: -250px;
+        }
+        .capa-projeto img {
+          left: auto;
+          margin: auto;
+        }
+        .descricao {
+          width: 80%;
+        }
+        .skill-bar {
+          width: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="capa">
+      <div class="capa-texto">
+        <div class="capa-portfolio">
+          <img src="imgs/itagiba/itagiba-contorno_animated.svg" class="contorno" alt="" />
+          <p class="container2">P O R T F Ó L I O</p>
+        </div>
+        <div class="capa-nome">
+          <p class="container2">EDUARDO LUIZ SCHILLING</p>
+        </div>
+      </div>
+    </div>
+    <div class="perfil">
+      <div class="container2">
+        <div class="header-perfil slide-y">
+          <div class="contato">
+            <p><img src="imgs/icons/local.svg" alt="" />Vinhedo/SP</p>
+            <p><img src="imgs/icons/mail.svg" alt="" />duda@schilling.arq.br</p>
+            <p><img src="imgs/icons/phone.svg" alt="" />19 9 2000 4846</p>
+            <p><img src="imgs/icons/site.svg" alt="" />www.schilling.arq.br</p>
+            <p><img src="imgs/icons/birth.svg" alt="" />01/02/1988</p>
+          </div>
+          <div>
+            <img src="imgs/eduardo.jpg" class="foto" alt="" />
+          </div>
+        </div>
+        <div class="perfil-fundo slide-y">
+          <div class="perfil-titulo">SOBRE MIM</div>
+          Como filho de arquitetos, comecei cedo a trabalhar com a tradução de desenhos feitos à mão em plotagens CAD. Em algum momento me
+          apaixonei pela visualização arquitetônica e desde então comecei a aprender na web a arte de dar vida aos pixels. Nos mais de 20
+          anos trabalhando no escritório com meus pais tive contato com todas as etapas do fazer arquitetônico, desde a concepção e
+          desenvolvimento do projeto até o acompanhamento da obra. Tenho experiência com vários softwares e gosto de aprender novas
+          ferramentas que melhorem a representação gráfica e facilitem a comunicação entre as partes. Atento aos detalhes, trabalho bem em
+          equipe e estou sempre disposto para trazer o melhor para os projetos.
+        </div>
+        <div class="perfil-fundo slide-y">
+          <div class="perfil-titulo">FORMAÇÃO</div>
+          2017 - 2023 &nbsp;&nbsp; Arquitetura e Urbanismo - Universidade São Francisco
+        </div>
+        <div class="perfil-fundo slide-y">
+          <div class="perfil-titulo">EXPERIÊNCIA</div>
+          2000 - 2024 <b>WV Arquitetos</b> - Apoio no desenvolvimento de projetos arquitetônicos e complementares, visualização
+          arquitetônica, elaboração de projetos para aprovação em condomínios e prefeitura, assistência no acompanhamento de obras.
+        </div>
+        <div class="perfil-fundo slide-y">
+          <div class="perfil-titulo">IDIOMAS</div>
+          Inglês - Lê bem, escreve bem, fala razoavelmente<br />
+          Espanhol - Lê bem, escreve razoavelmente, fala razoavelmente
+        </div>
+        <div class="perfil-fundo slide-y">
+          <div class="perfil-titulo">PROFICIÊNCIA EM SOFTWARES</div>
+          <div class="container-software">
+            <div class="nome-software">Autocad</div>
+            <div class="skill">
+              <p>Avançado</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Blender</div>
+            <div class="skill">
+              <p>Avançado</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Revit</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Archicad</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">3D Studio Max</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Sketchup</div>
+            <div class="skill">
+              <p>Básico</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Lumion</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Rhino</div>
+            <div class="skill">
+              <p>Básico</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Photoshop</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Gimp</div>
+            <div class="skill">
+              <p>Avançado</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">InDesign</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Scribus</div>
+            <div class="skill">
+              <p>Avançado</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Illustrator</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">Inkscape</div>
+            <div class="skill">
+              <p>Avançado</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+            </div>
+          </div>
+          <div class="container-software">
+            <div class="nome-software">QGIS</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="capa-projeto">
+      <div class="projeto-nome slide-x-l">
+        <p class="container">
+          R E S I D Ê N C I A <br />
+          G R A M A D O
+        </p>
+      </div>
+      <img src="imgs/itagiba/itagiba-iso.png" class="slide-y" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/itagiba/itagiba-completo.webp" class="slide-x-r" alt="" />
+      <div class="descricao slide-y">
+        Projeto completo desenvolvido a partir de anteprojeto desenhado à mão de autoria dos arquitetos Waldemar e Vera Schilling. Foram
+        produzidas todas as plantas necessárias para aprovação junto ao condomínio e prefeitura municipal, bem como projetos complementares
+        (elétrica e hidráulica) necessários para a construção do projeto.
+      </div>
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/itagiba/itagiba-fachada.webp" class="slide-x-l" alt="" />
+      <div class="descricao slide-y">
+        Visualização arquitetônica do projeto. As imagens produzidas foram importantes para a discussão de ajustes ao longo do
+        desenvolvimento do anteprojeto junto ao cliente até a definição da versão final.
+      </div>
+    </div>
+
+    <div class="capa-projeto">
+      <div class="projeto-nome slide-x-l">
+        <p class="container">
+          R E S I D Ê N C I A <br />
+          T O S C A N A
+        </p>
+      </div>
+      <img src="imgs/juliano/juliano-iso.png" class="slide-y" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/juliano/juliano-pb.webp" class="slide-x-r" alt="" />
+      <div class="descricao slide-y">
+        Projeto completo desenvolvido a partir de anteprojeto desenhado à mão de autoria da arquiteta Vera Schilling. Foram produzidas todas
+        as plantas necessárias para aprovação junto ao condomínio e prefeitura municipal, bem como projetos complementares (elétrica e
+        hidráulica) necessários para a construção do projeto.
+      </div>
+    </div>
+    <div class="pagina-branco">
+      <div class="container">
+        <img-comparison-slider class="slide-x-l">
+          <img slot="first" src="imgs/juliano/juliano-antes.webp" />
+          <img slot="second" src="imgs/juliano/juliano-depois.webp" />
+        </img-comparison-slider>
+      </div>
+      <div class="descricao slide-y">
+        Maquete eletrônica da fachada evidenciando a volumetria e escolha de materiais do projeto. Nesta composição, a imagem da residência
+        produzida digitalmente foi sobreposta à fotografia do terreno vazio, permitindo a visualização do projeto em seu contexto com o
+        entorno real.
+      </div>
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/juliano/juliano-fundos.webp" class="slide-x-r" alt="" />
+      <div class="descricao slide-y">
+        Visualização arquitetônica dos fundos da residência com destaque para a piscina e área de lazer, paisagismo e iluminação.
+      </div>
+    </div>
+    <div class="capa-projeto">
+      <div class="projeto-nome slide-x-l">
+        <p class="container">
+          R E S I D E N C I A L<br />
+          A L V O R A D A
+        </p>
+      </div>
+      <img src="imgs/alvorada/alvorada-aerea.webp" class="slide-y" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <div class="descricao slide-y">
+        O Residencial Alvorada é o resultado do trabalho acadêmico da última disciplina de projeto na Universidade São Francisco. O projeto
+        consiste na composição de 6 blocos de apartamentos, cada bloco possuindo térreo com espaços de academia, salão de festas e 3 andares
+        residenciais com 6 unidades cada, com habitações de 1 e 2 dormitórios, totalizando 108 apartamentos. Os blocos são orientados de
+        forma a maximizar o melhor aproveitamento do percurso solar ao longo de todo ano.
+      </div>
+      <img src="imgs/alvorada/alvorada-entrada.webp" class="slide-x-r" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/alvorada/alvorada-corte-cad.webp" class="slide-x-l" alt="" />
+      <img src="imgs/alvorada/alvorada-corte-transversal.webp" class="slide-x-r" alt="" />
+      <img src="imgs/alvorada/alvorada-corte-cad2.webp" class="slide-x-l" alt="" />
+      <img src="imgs/alvorada/alvorada-corte-longitudinal.webp" class="slide-x-r" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <div class="descricao slide-y">
+        O trabalho foi uma oportunidade para o estudo de diferentes tipos de representação, desde o desenho técnico de plantas. cortes e
+        elevações até as ilustrações em 3D de vários ângulos e a planta humanizada dos apartamentos.
+      </div>
+      <div class="container">
+        <img-comparison-slider class="slide-x-r">
+          <img slot="first" src="imgs/alvorada/alvorada-pb-antes.webp" />
+          <img slot="second" src="imgs/alvorada/alvorada-pb-depois.webp" />
+        </img-comparison-slider>
+      </div>
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/alvorada/alvorada-piscina.webp" class="slide-x-l" alt="" />
+    </div>
+    <div class="capa-projeto">
+      <div class="projeto-nome slide-x-l">
+        <p class="container">
+          P A R Q U E<br />
+          T I E T Ê &nbsp;&nbsp; V I V O
+        </p>
+      </div>
+      <img src="imgs/tfg/tfg-relevo-hidrografia.webp" class="slide-y" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <div class="descricao slide-y">
+        Este foi o projeto apresentado como Trabalho Final de Graduação (TFG) junto à Universidade São Francisco. Pelo estudo da história e
+        memória das águas da metrópole e através do levantamento das informações urbanísticas da região, o trabalho foi uma oportunidade de
+        reflexão sobre a cidade e sua relação com seus rios. O parque é imaginado num cenário onde o Rio Tietê é vivo, com sua mata ciliar
+        restaurada e com diversos equipamentos para desfrute da população.
+      </div>
+      <img src="imgs/tfg/tfg-planta.webp" class="slide-x-r" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <div class="descricao slide-y">
+        Vista do rio restaurado e navegável. Floresta urbana de espécies nativas da Mata Atlântica. A ideia do parque palco do teatro da
+        vida na cidade.
+      </div>
+      <img src="imgs/tfg/tfg-aerea.webp" class="slide-x-l" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <div class="descricao slide-y">
+        Amplas áreas de convívio que valorizam os pedestres e ciclistas, com diversos atrativos culturais rodeados pela natureza exuberante
+        em meio à metrópole.
+      </div>
+      <img src="imgs/tfg/tfg-caminho.webp" class="slide-x-r" alt="" />
+    </div>
+    <div class="pagina-branco">
+      <img src="imgs/tfg/tfg-criancas.webp" class="slide-x-l" alt="" />
+    </div>
+  </body>
+</html>
