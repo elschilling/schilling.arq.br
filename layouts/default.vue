@@ -16,14 +16,21 @@
   animation: resize 1s ease 3s forwards;
 }
 @keyframes resize {
-  from {
+  0% {
     height: 100vh;
     width: var(--logo-width);
   }
-  to {
-    height: 4rem;
-    width: 160px;
-    transform: translateY(5px) translateX(-30px);
+  50% {
+    height: 100px;
+    width: 220px;
+    transform: translateY(1px) translateX(-54px);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    height: 100px;
+    width: 220px;
+    transform: translateY(1px) translateX(-54px);
   }
 }
 

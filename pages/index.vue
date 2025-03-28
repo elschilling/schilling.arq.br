@@ -1,5 +1,6 @@
 <template>
   <swiper-container
+    id="projetos"
     style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
     loop="true"
     :slides-per-view="1"
