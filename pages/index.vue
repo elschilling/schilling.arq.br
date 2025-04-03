@@ -23,9 +23,9 @@
   </swiper-container>
 
   <div
-    class="w-full xl:w-[1200px] bg-stone-950/90 m-auto font-['Lexend'] p-10 text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn"
+    class="w-full xl:w-[1200px] bg-stone-950/90 m-auto font-['Lexend'] text-zinc-400 font-extralight text-2xl antialiased tracking-widest fadeIn"
   >
-    <div class="avida pb-10">
+    <div class="avida pb-10 p-10">
       <p class="py-5">A vida é feita de <span class="font-bold">sonhos</span>. Uns modestos, outros normais e ainda os arrojados.</p>
       <p class="py-5">
         O <span class="font-bold">nosso</span> maior sonho é, através de nossos projetos e construções, materializar e ajudar a concretizar
@@ -73,6 +73,9 @@
         </SCard>
       </div>
     </div>
+
+    <p class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10" id="obras">OBRAS</p>
+    <Map />
 
     <div class="bg-[#076c53]/30 row-full mt-20 faixa">
       <p id="contato" class="text-center font-['Lexend'] text-3xl text-primary-400 font-bold tracking-wider mt-15 pt-10">CONTATOS</p>
@@ -124,7 +127,7 @@
         src="https://www.google.com/maps/ms?msa=0&amp;msid=214741664173403548166.00049a0f7daf89244d1e2&amp;ie=UTF8&amp;ll=-23.033146,-46.971713&amp;spn=0.000101,0.000086&amp;t=h&amp;iwloc=00049a0f8018c7c5769da&amp;output=embed"
       ></iframe> -->
       <iframe
-        class="relative z-40 w-[1000px] xl:w-full"
+        class="relative z-40 w-full"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7436053223996!2d-46.974389123620455!3d-23.033184442402597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2d67f436670b%3A0xc54658443d1a8cd5!2sWV%20Arquitetos%20-%20Waldemar%20e%20Vera%20Schilling%20Arquitetos!5e0!3m2!1spt-BR!2sbr!4v1711721484974!5m2!1spt-BR!2sbr"
         height="450"
         style="border: 0"
