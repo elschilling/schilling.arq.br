@@ -8,16 +8,21 @@ export default defineNuxtConfig({
       },
     },
   ], 'nuxt-icon', 'nuxt-gtag', '@nuxtjs/leaflet'],
+
   ui: {
     icons: ['mdi'],
   },
+
   // vue: {
   //   compilerOptions: {
   //     isCustomElement: (tag) => tag.startsWith('swiper-'),
   //   },
   // },
   devtools: { enabled: false },
+
   gtag: {
     id: 'G-1XX6QLRVHJ',
   },
+
+  compatibilityDate: '2025-04-05',
 })
