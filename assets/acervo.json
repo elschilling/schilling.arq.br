@@ -10,7 +10,7 @@
     "lng": -47.0121250919,
     "art": null,
     "Public": true,
-    "Images": "/obras/elaine.webp",
+    "Images": ["/obras/elaine.webp"],
     "nome": "Residência Villagio Canto Del Bosco"
   },
   {
@@ -50,7 +50,7 @@
     "lng": -46.9946501575,
     "art": null,
     "Public": true,
-    "Images": null,
+    "Images": ["/obras/ricardo.webp"],
     "nome": "Residência Le Village"
   },
   {
@@ -63,8 +63,9 @@
     "lat": -23.0885629357,
     "lng": -47.2343546947,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/jose.webp"],
+    "nome": "Residência Residencial Dona Maria José"
   },
   {
     "rrt": 9168005.0,
@@ -73,11 +74,12 @@
     "contratante": "Eduardo Torres Portas",
     "metragem": 225.52,
     "endereco": "RUA DOIS Nº L25 Complemento: QUADRA E Cidade: INDAIATUBA Bairro: JARDIM RESIDENCIAL DONA MARIA UJFO:S SÉP CEP: 03124042",
-    "lat": -23.0864617587,
-    "lng": -47.2338670021,
+    "lat": -23.089277,
+    "lng": -47.234568,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/portas.webp", "/obras/portas-foto.webp"],
+    "nome": "Residência Residencial Dona Maria José"
   },
   {
     "rrt": 8549199.0,
@@ -89,8 +91,9 @@
     "lat": -23.0879188226,
     "lng": -47.2345347624,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/portas25.webp"],
+    "nome": "Residência Residencial Dona Maria José"
   },
   {
     "rrt": 8239872.0,
@@ -190,11 +193,12 @@
     "contratante": "THOMAS HENRIQUE ANGELI",
     "metragem": 291.09,
     "endereco": "RODOVIA DOS ANDRADAS Nº s/n Complemento: LOTE 27, QUADRA C - LOT. JARDIM FIORELA Cidade: VALINHOS Bairro: PONTE ALTA UF: SP CEP: 13277734",
-    "lat": -23.5557714,
-    "lng": -46.6395571,
+    "lat": -22.990374,
+    "lng": -46.991789,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/thomas.webp"],
+    "nome": "Residência Jardim Fiorela"
   },
   {
     "rrt": 6554546.0,
@@ -359,11 +363,12 @@
     "contratante": "Ralph Tortima Stettinger Filho",
     "metragem": 255.0,
     "endereco": "ALAMEDA ITAIPAVA Nº s/ número Complemento: Cond.Res.Reserva do Itamaracá II Lote 48 Quadra D Cidade: VALINHOS Bairro: JOAPIRANGA UF: SP CEP: 13278460",
-    "lat": -22.9813946,
-    "lng": -47.0352226,
+    "lat": -22.979431,
+    "lng": -47.034838,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/ralph48.webp"],
+    "nome": "Residência Itamaracá 48"
   },
   {
     "rrt": 4192793.0,
@@ -385,11 +390,12 @@
     "contratante": "Ralph Tortima Stettinger Filho",
     "metragem": 240.25,
     "endereco": "ALAMEDA ITAIPAVA Nº s/número Complemento: Cond.Res.Reserva do Itamaracá II Lote 36 Quadra C Cidade: VALINHOS Bairro: JOAPIRANGA UF: SP CEP: 13278460",
-    "lat": -22.9813946,
-    "lng": -47.0352226,
+    "lat": -22.981326,
+    "lng": -47.035208,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/ralph36.webp"],
+    "nome": "Residência Itamaracá 36"
   },
   {
     "rrt": 4058738.0,
@@ -532,7 +538,7 @@
     "lng": -47.0144594,
     "art": null,
     "Public": true,
-    "Images": "/obras/nubia.webp",
+    "Images": ["/obras/nubia.webp"],
     "nome": "Residência Roncáglia"
   },
   {
@@ -546,7 +552,7 @@
     "lng": -47.0095137,
     "art": null,
     "Public": true,
-    "Images": "/obras/lucas.webp",
+    "Images": ["/obras/lucas.webp"],
     "nome": "Residência Reserva das Palmeiras"
   },
   {
@@ -573,7 +579,7 @@
     "lng": -46.998630869,
     "art": null,
     "Public": true,
-    "Images": "/obras/itagiba.webp",
+    "Images": ["/obras/itagiba.webp"],
     "nome": "Residência Gramado"
   },
   {
@@ -612,8 +618,9 @@
     "lat": -23.0143562056,
     "lng": -46.9690795367,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/filipe.webp"],
+    "nome": "Residência Reserva da Mata"
   },
   {
     "rrt": 821909.0,
@@ -652,7 +659,7 @@
     "lng": -46.9879419,
     "art": null,
     "Public": true,
-    "Images": "/obras/beatriz.webp",
+    "Images": ["/obras/beatriz.webp"],
     "nome": "Residência Ville Saint Helene"
   },
   {
@@ -679,7 +686,7 @@
     "lng": -46.975583,
     "art": null,
     "Public": true,
-    "Images": "/obras/manoel.webp",
+    "Images": ["/obras/manoel.webp"],
     "nome": "Residência Reserva dos Vinhedos"
   },
   {
@@ -689,11 +696,12 @@
     "contratante": "BRUNO LIBERALESSO NERI",
     "metragem": 344.3,
     "endereco": "RUA MáRIO CHISTE Nº 73 Complemento: LOTE 20, QUADRA E Cidade: CAMPINAS Bairro: ALPHAVILLE DOM PEDRO 2 UF: SP CEP: 13097245",
-    "lat": -22.2801518,
-    "lng": -46.3585428,
+    "lat": -22.858096,
+    "lng": -47.007975,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/bruno.webp"],
+    "nome": "Residência Alphaville Dom Pedro 2"
   },
   {
     "rrt": 745781.0,
@@ -719,7 +727,7 @@
     "lng": -46.9647599,
     "art": null,
     "Public": true,
-    "Images": "/obras/azael.webp",
+    "Images": ["/obras/azael.webp"],
     "nome": "Residência Entre Verdes"
   },
   {
@@ -1202,8 +1210,8 @@
     "lng": -47.0078912,
     "art": null,
     "Public": true,
-    "Images": null,
-    "nome": "Residência Capela"
+    "Images": ["/obras/capela.webp"],
+    "nome": "Comercial Capela"
   },
   {
     "rrt": 10643930.0,
@@ -1216,7 +1224,7 @@
     "lng": -46.977498,
     "art": null,
     "Public": true,
-    "Images": "/obras/joao.webp",
+    "Images": ["/obras/joao.webp"],
     "nome": "Residência Aziz"
   },
   {
@@ -3273,7 +3281,7 @@
     "lng": -47.01171,
     "art": null,
     "Public": true,
-    "Images": "/obras/marco.webp",
+    "Images": ["/obras/marco.webp"],
     "nome": "Residência Villagio Canto Del Bosco"
   },
   {
@@ -3287,7 +3295,49 @@
     "lng": -47.012808,
     "art": null,
     "Public": true,
-    "Images": "/obras/nelson.webp",
+    "Images": ["/obras/nelson.webp"],
     "nome": "Residência Alphaville Dom Pedro 3"
+  },
+  {
+    "rrt": 12654764,
+    "data": "08/02/2023",
+    "descricao": "Residência unifamiliar com 682,67 m² e pisicina de 25,85 m²",
+    "contratante": "RTSF ADMINISTRADORA DE BENS E PARTICIPAÇÕES LTDA",
+    "metragem": 682.67,
+    "endereco": "MARIA LUCIA DE SOUZA RANGEL RICCI, RESIDENCIAL JATIBELA, CAMPINAS SP",
+    "lat": -22.864037,
+    "lng": -47.012548,
+    "art": null,
+    "Public": true,
+    "Images": ["/obras/ralphJatibela.webp"],
+    "nome": "Residência Jatibela"
+  },
+  {
+    "rrt": 11048964,
+    "data": "19/06/2023",
+    "descricao": "Projeto de construção comercial em alvenaria com cobertura em estrutura metálica de 593,50 m²",
+    "contratante": "RTSF ADMINISTRADORA DE BENS E PARTICIPAÇÕES LTDA",
+    "metragem": 593.5,
+    "endereco": "COMENDADOR ALADINO SELMI 2551, BAIRRO SAN VILA MARTIN, CAMPINAS SP",
+    "lat": -22.842862,
+    "lng": -47.153008,
+    "art": null,
+    "Public": true,
+    "Images": ["/obras/ralphMatao.webp"],
+    "nome": "Comercial Vila San Martin"
+  },
+  {
+    "rrt": 11629614,
+    "data": "02/02/2022",
+    "descricao": "Projeto de residência unifamiliar com 284,71 m²",
+    "contratante": "ROBERTO ANTONIO MITSUO TAMAOKI",
+    "metragem": 284.71,
+    "endereco": "RUA ANTONIO CASEMIRO AMGARTEN, BAIRRO PAIQUERE, VALINHOS SP",
+    "lat": -22.98357,
+    "lng": -47.011636,
+    "art": null,
+    "Public": true,
+    "Images": ["/obras/roberto.webp"],
+    "nome": "Residência Villagio Canto Del Bosco"
   }
 ]
