@@ -301,8 +301,9 @@
     "lat": -13.5564716,
     "lng": -52.2691044,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/andre.webp"],
+    "nome": "Residência Canarana"
   },
   {
     "rrt": 4995168.0,
@@ -311,11 +312,12 @@
     "contratante": "Arthur José de Souza Colussi",
     "metragem": 287.72,
     "endereco": "ALAMEDA ITAIPAVA Nº s/numero Complemento: Cond. Reserva do Itamaracá II Lote 14 Quadra B Cidade: VALINHOS Bairro: JOAPIRANGA UF: SP CEP: 13278460",
-    "lat": -22.9813946,
-    "lng": -47.0352226,
+    "lat": -22.978837,
+    "lng": -47.034275,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/arthur.webp"],
+    "nome": "Residência Reserva do Itamaracá II"
   },
   {
     "rrt": 4980905.0,
@@ -337,11 +339,12 @@
     "contratante": "S.S.G PARTICIPAÇÕES LTDA",
     "metragem": 128.0,
     "endereco": "ESTRADA Da Boiada Nº 500 Complemento: Cidade: VINHEDO Bairro: Jardim Brasil UF: SP CEP: 13280000",
-    "lat": -23.0561622,
-    "lng": -46.9732594,
+    "lat": -23.034355,
+    "lng": -46.986641,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/ssg.webp"],
+    "nome": "Comercial Boiada"
   },
   {
     "rrt": 4457372.0,
@@ -672,8 +675,9 @@
     "lat": -23.055013,
     "lng": -46.9695804,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/luiz.webp"],
+    "nome": "Residência Terras de São Francisco"
   },
   {
     "rrt": 7587002.0,
@@ -750,11 +754,12 @@
     "contratante": "Bruno Matiuzzi de Oliveira",
     "metragem": 318.8,
     "endereco": "RUA LIBERA MARIA SBARDELLI BASSAN (RESIDENCIAL LUZERN) Nº 134 Complemento: Lote 26, quarteirão 10756, quadra G10. Cidade: CAMPINAS Bairro: SWISS PARK UF: SP CEP: 13049588",
-    "lat": -22.9099384,
-    "lng": -47.0626332,
+    "lat": -22.970755,
+    "lng": -47.071272,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/brunom.webp"],
+    "nome": "Residência Residencial Luzern"
   },
   {
     "rrt": 668567.0,
@@ -815,11 +820,12 @@
     "contratante": "Ricardo Motoyama de Almeida",
     "metragem": 365.63,
     "endereco": "RUA VICENTE QUERCIA Nº 303 Complemento: Lote 06, Quadra K, Quarteirão 16895 Cidade: CAMPINAS Bairro: ALPHAVILLE DOM PEDRO 3 UF: SP CEP: 13097258",
-    "lat": -22.9099384,
-    "lng": -47.0626332,
+    "lat": -22.847643,
+    "lng": -47.014236,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/ricardom.webp"],
+    "nome": "Residência Alphaville Dom Pedro 3"
   },
   {
     "rrt": 565533.0,

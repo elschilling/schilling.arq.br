@@ -2,7 +2,16 @@
   <div style="height: 80vh; width: 100%; margin-top: 20px">
     <LMap ref="map" :zoom="zoom" :center="[-23.0330257, -46.9717131]" :use-global-leaflet="false">
       <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base" name="OpenStreetMap" />
+      <LTileLayer
+        url="http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}"
+        layer-type="base"
+        name="GoogleHybrid"
+        :subdomains="['mt0', 'mt1', 'mt2', 'mt3']"
+      />
+      <LControlLayers />
+
       <LMarker v-for="obra of acervoPublic" :lat-lng="{ lat: obra.lat, lng: obra.lng }">
+        <LIcon :icon-url="markerIcon" :icon-anchor="[12, 41]" :popup-anchor="[1, -34]" />
         <LPopup>
           {{ obra.nome }} <br />
           {{ obra.data }}
@@ -24,7 +33,8 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onMounted } from 'vue'
+import markerIcon from '@/assets/marker-icon-logo.png'
 const zoom = ref(11)
 
 // Lightbox state
