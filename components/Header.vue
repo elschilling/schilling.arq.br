@@ -12,8 +12,8 @@
         <div class="hidden lg:inline-flex">
           <ul class="flex flex-row font-['Lexend'] text-zinc-200 tracking-widest">
             <!-- <li class="px-5"><UButton label="PROJETOS" class="font-['Lexend'] hidden lg:block" /></li> -->
-            <li class="px-5"><a href="#obras">OBRAS</a></li>
             <li class="px-5"><a href="#servicos">SERVIÇOS</a></li>
+            <li class="px-5"><a href="#obras">OBRAS</a></li>
             <li class="px-5"><a href="#contato">CONTATO</a></li>
           </ul>
         </div>
@@ -35,8 +35,8 @@
       :class="isOpen ? 'block' : 'hidden'"
       class="bg-black/60 backdrop-blur-sm mt-3 font-['Lexend'] text-zinc-200 tracking-widest transition-opacity duration-300 text-end"
     >
-      <a href="#obras" class="p-3 block hover:bg-black rounded">OBRAS</a>
       <a href="#servicos" class="p-3 block hover:bg-black rounded">SERVIÇOS</a>
+      <a href="#obras" class="p-3 block hover:bg-black rounded">OBRAS</a>
       <a href="#contato" class="p-3 block hover:bg-black rounded">CONTATO</a>
       <!-- <a href="#" class="p-3 block hover:bg-black rounded">OBRAS</a> -->
     </div>
