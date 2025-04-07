@@ -246,11 +246,12 @@
     "contratante": "Ana Paula Tavares de Assis",
     "metragem": 277.53,
     "endereco": "RUA ANTôNIO CASEMIRO AMGARTEN (LOT. VILLAGIO CANTO DEL BOSCO) Nº 206 Complemento: Lote 26, Quadra B Cidade: VALINHOS Bairro: LOTEAMENTO VILLAGGIO CANTO DEULF :B SOPSCO CEP: 13271577",
-    "lat": -22.9691285,
-    "lng": -46.9958196,
+    "lat": -22.983853,
+    "lng": -47.01158,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/ana.webp"],
+    "nome": "Residência Villagio Canto Del Bosco"
   },
   {
     "rrt": 6099920.0,
@@ -850,8 +851,9 @@
     "lat": -23.0566521,
     "lng": -46.9705101,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/wanderley.webp"],
+    "nome": "Residência Terras de São Francisco"
   },
   {
     "rrt": 5000641.0,
@@ -1908,8 +1910,9 @@
     "lat": -23.0023178,
     "lng": -47.0140304,
     "art": 9.222122006e16,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/afonso.webp"],
+    "nome": "Residência Fazenda São José"
   },
   {
     "rrt": null,
@@ -1931,11 +1934,12 @@
     "contratante": "Sandra Regina Guimaraes Chan",
     "metragem": 425.88,
     "endereco": "Alameda Alam. Paineiras, L11, q.E Lot. B. de Grevile S/N 13280-000",
-    "lat": 37.7798721,
-    "lng": -122.2821855,
+    "lat": -23.016551,
+    "lng": -46.968298,
     "art": 9.222122006e16,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/sandra.webp"],
+    "nome": "Residência Bosques de Grevílea"
   },
   {
     "rrt": null,
@@ -2363,8 +2367,9 @@
     "lat": -23.0521893,
     "lng": -46.9886225,
     "art": 9.222122008e16,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/mauricio.webp"],
+    "nome": "Residência Sol Vinhedo Village"
   },
   {
     "rrt": null,
@@ -2415,8 +2420,9 @@
     "lat": -22.8875668,
     "lng": -46.9559079,
     "art": 9.222122008e16,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/elizabeth.webp"],
+    "nome": "Residência Sousas"
   },
   {
     "rrt": null,
@@ -2425,11 +2431,12 @@
     "contratante": "Katia Rosangela Secco Marques de Oliveira",
     "metragem": 272.59,
     "endereco": "Rua AV. CAP. ESQ. VE O. PREV, Q.H, L. 178 13276-000",
-    "lat": -22.9734791,
-    "lng": -46.9927333,
+    "lat": -22.949282,
+    "lng": -47.001396,
     "art": 9.222122008e16,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/katia.webp"],
+    "nome": "Residência Vivenda das Cerejeiras"
   },
   {
     "rrt": null,
@@ -2464,11 +2471,12 @@
     "contratante": "Jose Amauri Bianco",
     "metragem": 339.08,
     "endereco": "Alameda Ala. Mexico esq. Al. Uruguai, l. 01, q. I S/N 13280-000",
-    "lat": 37.7798721,
-    "lng": -122.2821855,
+    "lat": -23.032516,
+    "lng": -46.985489,
     "art": 9.222122008e16,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/amauri.webp"],
+    "nome": "Residência Jardim América"
   },
   {
     "rrt": null,
@@ -3334,6 +3342,20 @@
   },
   {
     "rrt": 11629614,
+    "data": "10/09/2008",
+    "descricao": "Projeto de residência unifamiliar com 419,15 m²",
+    "contratante": "CARLOS ORESTES VANZO",
+    "metragem": 419.15,
+    "endereco": "RUA DAS IXIAS N 165, LOTE 10, QUADRA P, LOTEAMENTO ALPHAVILLE DOM PEDRO, CAMPINAS SP",
+    "lat": -22.856281,
+    "lng": -47.019493,
+    "art": null,
+    "Public": true,
+    "Images": ["/obras/carlos.webp"],
+    "nome": "Residência Alphaville Dom Pedro"
+  },
+  {
+    "rrt": null,
     "data": "02/02/2022",
     "descricao": "Projeto de residência unifamiliar com 284,71 m²",
     "contratante": "ROBERTO ANTONIO MITSUO TAMAOKI",
@@ -3345,5 +3367,19 @@
     "Public": true,
     "Images": ["/obras/roberto.webp"],
     "nome": "Residência Villagio Canto Del Bosco"
+  },
+  {
+    "rrt": null,
+    "data": "02/02/2006",
+    "descricao": "Projeto de residência unifamiliar com 230,09 m²",
+    "contratante": "JOANA NICOLETTI MOREIRA SOARES AZEVEDO",
+    "metragem": 230.09,
+    "endereco": " Rua Parque do Iguaçu, lote 04, quadra F, Recanto dos Paturis, Vinhedo SP",
+    "lat": -23.022046,
+    "lng": -46.970083,
+    "art": null,
+    "Public": true,
+    "Images": ["/obras/joana.webp"],
+    "nome": "Residência Recanto dos Paturis"
   }
 ]

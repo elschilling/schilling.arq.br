@@ -1,13 +1,13 @@
 <template>
   <div style="height: 80vh; width: 100%; margin-top: 20px">
     <LMap ref="map" :zoom="zoom" :center="[-23.0330257, -46.9717131]" :use-global-leaflet="false">
-      <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base" name="OpenStreetMap" />
       <LTileLayer
         url="http://{s}.google.com/vt/lyrs=s,h&x={x}&y={y}&z={z}"
         layer-type="base"
         name="GoogleHybrid"
         :subdomains="['mt0', 'mt1', 'mt2', 'mt3']"
       />
+      <LTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" layer-type="base" name="OpenStreetMap" />
       <LControlLayers />
 
       <LMarker v-for="obra of acervoPublic" :lat-lng="{ lat: obra.lat, lng: obra.lng }">
