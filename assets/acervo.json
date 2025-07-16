@@ -260,11 +260,12 @@
     "contratante": "Moacyr Francisco de Azevedo Lacerda",
     "metragem": 169.43,
     "endereco": "RUA 5 Nº SEM NÚM. Complemento: Lote 32, Quadra C - Residencial Le Village Cidade: VALINHOS Bairro: Samambaia UF: SP CEP: 13272400",
-    "lat": -22.9454454,
-    "lng": -46.9956187,
+    "lat": -22.946516,
+    "lng": -46.994007,
     "art": null,
-    "Public": false,
-    "Images": null
+    "Public": true,
+    "Images": ["/obras/moacyr.webp"],
+    "nome":"Residência Le Village"
   },
   {
     "rrt": 600246.0,
