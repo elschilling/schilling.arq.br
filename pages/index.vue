@@ -89,18 +89,10 @@
         <CCard class="card" name="Vera Lucia Schilling" photo="/contatos/vera.jpg" crea="5061747230" cau="A13144-0" inmemorian="true">
           arquiteta e urbanista
         </CCard>
-        <CCard
-          class="card"
-          name="Eduardo Luiz Schilling"
-          title="arquiteto e urbanista"
-          photo="/contatos/eduardo.jpg"
-          phone="19 9 9556 4935"
-        >
+        <CCard class="card" name="Eduardo Luiz Schilling" title="arquiteto e urbanista" photo="/contatos/eduardo.jpg" phone="19920063047">
           arquiteto e urbanista<br />químico
         </CCard>
-        <CCard class="card" name="Mauro Santos" photo="/contatos/mauro.jpg" crea="0601524770" phone="19 9 9275 5844">
-          engenheiro civil
-        </CCard>
+        <CCard class="card" name="Mauro Santos" photo="/contatos/mauro.jpg" crea="0601524770" phone="19992755844"> engenheiro civil </CCard>
       </div>
     </div>
 
@@ -139,12 +131,14 @@
     <div class="bg-[#076c53]/30 row-full mt-20 card">
       <div class="w-full xl:w-[1000px] m-auto p-10 flex flex-col justify-center items-center xl:flex-row xl:place-content-between">
         <div class="py-5">
-          <a href="mailto:contato@schilling.arq.br"><Icon name="ic:baseline-email" size="35px" /> contato@schilling.arq.br</a>
+          <a class="flex" href="mailto:contato@schilling.arq.br"
+            ><Icon name="ic:baseline-email" size="35px" class="mr-2" /> contato@schilling.arq.br</a
+          >
         </div>
-        <div class="py-5"><Icon name="i-ic-baseline-phone" size="35px" /> 19 9 3826 1618</div>
+        <!-- <div class="py-5"><Icon name="i-ic-baseline-phone" size="35px" /> 19 9 3826 1618</div> -->
         <div class="py-5">
-          <a href="https://www.instagram.com/schilling.arq.br" target="_blank"
-            ><Icon name="i-mdi-instagram" size="35px" /> schilling.arq.br</a
+          <a class="flex" href="https://www.instagram.com/schilling.arq.br" target="_blank"
+            ><Icon name="i-mdi-instagram" size="35px" class="mr-2" /> schilling.arq.br</a
           >
         </div>
       </div>

@@ -18,7 +18,11 @@
     <div class="flex flex-col justify-center items-center text-white text-[14px] font-extralight tracking-normal mt-5">
       <p v-if="props.inmemorian" class="italic text-xl font-extralight">in memorian</p>
       <p v-if="props.email"><Icon name="ic:baseline-email" size="35px" /> {{ props.email }}</p>
-      <p v-if="props.phone"><Icon name="i-ic-baseline-phone" size="35px" /> {{ props.phone }}</p>
+      <p v-if="props.phone">
+        <a class="flex bg-emerald-700 p-2 rounded-full" :href="`https://wa.me/55${props.phone}`"
+          ><Icon name="i-ic-baseline-phone" size="35px" /> {{ props.phone }}</a
+        >
+      </p>
     </div>
   </div>
 </template>
