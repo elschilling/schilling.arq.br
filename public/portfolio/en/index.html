@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS8DFV47YV"></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag('js', new Date())
-
-      gtag('config', 'G-RS8DFV47YV')
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eduardo Luiz Schilling - Portfólio</title>
+    <title>Eduardo Luiz Schilling - Portfolio</title>
     <script defer src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -300,6 +289,38 @@
         border-radius: 15px;
       }
 
+      /* Language switcher */
+      .lang-switcher {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 5px;
+        backdrop-filter: blur(10px);
+      }
+
+      .lang-switcher a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        display: inline-block;
+      }
+
+      .lang-switcher a:hover {
+        background: #333;
+        color: #fff;
+      }
+
+      .lang-switcher a.active {
+        background: #222;
+        color: #fff;
+      }
+
       .slide-x-r {
         animation: linear slide-x-r both;
         animation-range: entry 5% cover 30%;
@@ -393,6 +414,11 @@
         .threejs-container {
           height: 50vh;
           margin: 0 10px;
+        }
+        .lang-switcher {
+          top: 10px;
+          right: 10px;
+          padding: 8px;
         }
       }
 
@@ -531,50 +557,20 @@
           max-width: 280px;
         }
       }
-
-      /* Language switcher */
-      .lang-switcher {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-        background: rgba(255, 255, 255, 0.9);
-        padding: 10px;
-        border-radius: 5px;
-        backdrop-filter: blur(10px);
-      }
-
-      .lang-switcher a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 600;
-        padding: 5px 10px;
-        border-radius: 3px;
-        transition: all 0.3s ease;
-        display: inline-block;
-      }
-
-      .lang-switcher a:hover {
-        background: #333;
-        color: #fff;
-      }
-
-      .lang-switcher a.active {
-        background: #222;
-        color: #fff;
-      }
     </style>
   </head>
   <body>
+    <!-- Language switcher -->
     <div class="lang-switcher">
-      <a href="#" class="active">PT</a>
-      <a href="en/index.html">EN</a>
+      <a href="../index.html">PT</a>
+      <a href="#" class="active">EN</a>
     </div>
+
     <div class="capa">
       <div class="capa-texto">
         <div class="capa-portfolio">
           <img src="/portfolio/imgs/itagiba/itagiba-contorno_animated.svg" class="contorno" alt="" />
-          <p class="container2">P O R T F Ó L I O</p>
+          <p class="container2">P O R T F O L I O</p>
         </div>
         <div class="capa-nome">
           <p class="container2">EDUARDO LUIZ SCHILLING</p>
@@ -585,49 +581,49 @@
       <div class="container2">
         <div class="header-perfil slide-y">
           <div class="contato">
-            <p><img src="/portfolio/imgs/icons/local.svg" alt="" />Vinhedo/SP</p>
+            <p><img src="/portfolio/imgs/icons/local.svg" alt="" />Vinhedo/SP, Brazil</p>
             <p><img src="/portfolio/imgs/icons/mail.svg" alt="" />duda@schilling.arq.br</p>
             <a href="https://wa.me/5519920063047" target="_blank"
-              ><p><img src="/portfolio/imgs/icons/phone.svg" alt="" />19 9 2006 3047</p></a
+              ><p><img src="/portfolio/imgs/icons/phone.svg" alt="" />+55 19 9 2006 3047</p></a
             >
             <a href="https://schilling.arq.br" target="_blank"
               ><p><img src="/portfolio/imgs/icons/site.svg" alt="" />www.schilling.arq.br</p></a
             >
-            <p><img src="/portfolio/imgs/icons/birth.svg" alt="" />01/02/1988</p>
+            <p><img src="/portfolio/imgs/icons/birth.svg" alt="" />02/01/1988</p>
           </div>
           <div>
             <img src="/portfolio/imgs/eduardo.jpg" class="foto" alt="" />
           </div>
         </div>
         <div class="perfil-fundo slide-y">
-          <div class="perfil-titulo">SOBRE MIM</div>
-          Como filho de arquitetos, comecei cedo a trabalhar com a tradução de desenhos feitos à mão em plotagens CAD. Em algum momento me
-          apaixonei pela visualização arquitetônica e desde então comecei a aprender na web a arte de dar vida aos pixels. Nos mais de 20
-          anos trabalhando no escritório com meus pais tive contato com todas as etapas do fazer arquitetônico, desde a concepção e
-          desenvolvimento do projeto até o acompanhamento da obra. Tenho experiência com vários softwares e gosto de aprender novas
-          ferramentas que melhorem a representação gráfica e facilitem a comunicação entre as partes. Atento aos detalhes, trabalho bem em
-          equipe e estou sempre disposto para trazer o melhor para os projetos.
+          <div class="perfil-titulo">ABOUT ME</div>
+          As the son of architects, I started working early with translating hand-drawn designs into CAD plots. At some point I fell in love
+          with architectural visualization and since then I began learning from the web the art of bringing pixels to life. In more than 20
+          years working in the office with my parents I had contact with all stages of architectural practice, from conception and project
+          development to construction supervision. I have experience with various software and enjoy learning new tools that improve graphic
+          representation and facilitate communication between parties. Attentive to details, I work well in teams and am always willing to
+          bring the best to projects.
         </div>
         <div class="perfil-fundo slide-y">
-          <div class="perfil-titulo">FORMAÇÃO</div>
-          2017 - 2023 &nbsp;&nbsp; Arquitetura e Urbanismo - Universidade São Francisco
+          <div class="perfil-titulo">EDUCATION</div>
+          2017 - 2023 &nbsp;&nbsp; Architecture and Urbanism - Universidade São Francisco
         </div>
         <div class="perfil-fundo slide-y">
-          <div class="perfil-titulo">EXPERIÊNCIA</div>
-          2000 - 2024 <b>WV Arquitetos</b> - Apoio no desenvolvimento de projetos arquitetônicos e complementares, visualização
-          arquitetônica, elaboração de projetos para aprovação em condomínios e prefeitura, assistência no acompanhamento de obras.
+          <div class="perfil-titulo">EXPERIENCE</div>
+          2000 - 2024 <b>WV Arquitetos</b> - Support in developing architectural and complementary projects, architectural visualization,
+          preparation of projects for approval in condominiums and city hall, assistance in construction supervision.
         </div>
         <div class="perfil-fundo slide-y">
-          <div class="perfil-titulo">IDIOMAS</div>
-          Inglês - Lê bem, escreve bem, fala razoavelmente<br />
-          Espanhol - Lê bem, escreve razoavelmente, fala razoavelmente
+          <div class="perfil-titulo">LANGUAGES</div>
+          English - Reads well, writes well, speaks reasonably<br />
+          Spanish - Reads well, writes reasonably, speaks reasonably
         </div>
         <div class="perfil-fundo slide-y">
-          <div class="perfil-titulo">PROFICIÊNCIA EM SOFTWARES</div>
+          <div class="perfil-titulo">SOFTWARE PROFICIENCY</div>
           <div class="container-software">
             <div class="nome-software">Autocad</div>
             <div class="skill">
-              <p>Avançado</p>
+              <p>Advanced</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
@@ -636,7 +632,7 @@
           <div class="container-software">
             <div class="nome-software">Blender</div>
             <div class="skill">
-              <p>Avançado</p>
+              <p>Advanced</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
@@ -645,7 +641,7 @@
           <div class="container-software">
             <div class="nome-software">Revit</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -654,7 +650,7 @@
           <div class="container-software">
             <div class="nome-software">Archicad</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -663,7 +659,7 @@
           <div class="container-software">
             <div class="nome-software">3D Studio Max</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -672,7 +668,7 @@
           <div class="container-software">
             <div class="nome-software">Sketchup</div>
             <div class="skill">
-              <p>Básico</p>
+              <p>Basic</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -681,7 +677,7 @@
           <div class="container-software">
             <div class="nome-software">Lumion</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -690,7 +686,7 @@
           <div class="container-software">
             <div class="nome-software">Rhino</div>
             <div class="skill">
-              <p>Básico</p>
+              <p>Basic</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -699,7 +695,7 @@
           <div class="container-software">
             <div class="nome-software">Photoshop</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -708,7 +704,7 @@
           <div class="container-software">
             <div class="nome-software">Gimp</div>
             <div class="skill">
-              <p>Avançado</p>
+              <p>Advanced</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
@@ -717,7 +713,7 @@
           <div class="container-software">
             <div class="nome-software">InDesign</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -726,7 +722,7 @@
           <div class="container-software">
             <div class="nome-software">Scribus</div>
             <div class="skill">
-              <p>Avançado</p>
+              <p>Advanced</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
@@ -735,7 +731,7 @@
           <div class="container-software">
             <div class="nome-software">Illustrator</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -744,7 +740,7 @@
           <div class="container-software">
             <div class="nome-software">Inkscape</div>
             <div class="skill">
-              <p>Avançado</p>
+              <p>Advanced</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
@@ -753,7 +749,7 @@
           <div class="container-software">
             <div class="nome-software">QGIS</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -762,7 +758,7 @@
           <div class="container-software">
             <div class="nome-software">Three.js</div>
             <div class="skill">
-              <p>Intermediário</p>
+              <p>Intermediate</p>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-on"></div>
               <div class="skill-bar skill-bar-off"></div>
@@ -776,10 +772,10 @@
     <div class="threejs-section">
       <div class="container2">
         <div class="perfil-fundo slide-y">
-          <div class="perfil-titulo">SIMULAÇÃO SOLAR INTERATIVA</div>
-          Aplicação desenvolvida em Three.js para visualização da posição do sol em tempo real. Esta ferramenta permite a análise da
-          incidência solar ao longo do dia e do ano, sendo útil para estudos de orientação solar em projetos arquitetônicos. Você pode
-          ajustar a data, horário e localização para observar como a posição do sol afeta a iluminação natural.
+          <div class="perfil-titulo">INTERACTIVE SOLAR SIMULATION</div>
+          Application developed in Three.js for real-time sun position visualization. This tool allows analysis of solar incidence
+          throughout the day and year, being useful for solar orientation studies in architectural projects. You can adjust the date, time
+          and location to observe how the sun's position affects natural lighting.
         </div>
       </div>
 
@@ -795,8 +791,8 @@
     <div class="capa-projeto">
       <div class="projeto-nome slide-x-l">
         <p class="container2">
-          R E S I D Ê N C I A <br />
-          G R A M A D O
+          G R A M A D O <br />
+          R E S I D E N C E
         </p>
       </div>
       <img src="/portfolio/imgs/itagiba/itagiba-iso.png" class="slide-y" alt="" />
@@ -804,24 +800,24 @@
     <div class="pagina-branco">
       <img src="/portfolio/imgs/itagiba/itagiba-completo.webp" class="slide-x-r" alt="" />
       <div class="descricao slide-y">
-        Projeto completo desenvolvido a partir de anteprojeto desenhado à mão de autoria dos arquitetos Waldemar e Vera Schilling. Foram
-        produzidas todas as plantas necessárias para aprovação junto ao condomínio e prefeitura municipal, bem como projetos complementares
-        (elétrica e hidráulica) necessários para a construção do projeto.
+        Complete project developed from a hand-drawn preliminary project by architects Waldemar and Vera Schilling. All plans necessary for
+        approval with the condominium and municipal government were produced, as well as complementary projects (electrical and plumbing)
+        necessary for project construction.
       </div>
     </div>
     <div class="pagina-branco">
       <img src="/portfolio/imgs/itagiba/itagiba-fachada.webp" class="slide-x-l" alt="" />
       <div class="descricao slide-y">
-        Visualização arquitetônica do projeto. As imagens produzidas foram importantes para a discussão de ajustes ao longo do
-        desenvolvimento do anteprojeto junto ao cliente até a definição da versão final.
+        Architectural visualization of the project. The images produced were important for discussing adjustments throughout the development
+        of the preliminary project with the client until defining the final version.
       </div>
     </div>
 
     <div class="capa-projeto">
       <div class="projeto-nome slide-x-l">
         <p class="container2">
-          R E S I D Ê N C I A <br />
-          T O S C A N A
+          T O S C A N A <br />
+          R E S I D E N C E
         </p>
       </div>
       <img src="/portfolio/imgs/juliano/juliano-iso.png" class="slide-y" alt="" />
@@ -829,9 +825,9 @@
     <div class="pagina-branco">
       <img src="/portfolio/imgs/juliano/juliano-pb.webp" class="slide-x-r" alt="" />
       <div class="descricao slide-y">
-        Projeto completo desenvolvido a partir de anteprojeto desenhado à mão de autoria da arquiteta Vera Schilling. Foram produzidas todas
-        as plantas necessárias para aprovação junto ao condomínio e prefeitura municipal, bem como projetos complementares (elétrica e
-        hidráulica) necessários para a construção do projeto.
+        Complete project developed from a hand-drawn preliminary project by architect Vera Schilling. All plans necessary for approval with
+        the condominium and municipal government were produced, as well as complementary projects (electrical and plumbing) necessary for
+        project construction.
       </div>
     </div>
     <div class="pagina-branco">
@@ -842,32 +838,32 @@
         </img-comparison-slider>
       </div>
       <div class="descricao slide-y">
-        Maquete eletrônica da fachada evidenciando a volumetria e escolha de materiais do projeto. Nesta composição, a imagem da residência
-        produzida digitalmente foi sobreposta à fotografia do terreno vazio, permitindo a visualização do projeto em seu contexto com o
-        entorno real.
+        Electronic model of the facade highlighting the volumetry and material choice of the project. In this composition, the digitally
+        produced image of the residence was superimposed on the photograph of the empty lot, allowing visualization of the project in its
+        context with the real surroundings.
       </div>
     </div>
     <div class="pagina-branco">
       <img src="/portfolio/imgs/juliano/juliano-fundos.webp" class="slide-x-r" alt="" />
       <div class="descricao slide-y">
-        Visualização arquitetônica dos fundos da residência com destaque para a piscina e área de lazer, paisagismo e iluminação.
+        Architectural visualization of the back of the residence highlighting the pool and leisure area, landscaping and lighting.
       </div>
     </div>
     <div class="capa-projeto">
       <div class="projeto-nome slide-x-l">
         <p class="container2">
-          R E S I D E N C I A L<br />
-          A L V O R A D A
+          A L V O R A D A<br />
+          R E S I D E N T I A L
         </p>
       </div>
       <img src="/portfolio/imgs/alvorada/alvorada-aerea.webp" class="slide-y" alt="" />
     </div>
     <div class="pagina-branco">
       <div class="descricao slide-y">
-        O Residencial Alvorada é o resultado do trabalho acadêmico da última disciplina de projeto na Universidade São Francisco. O projeto
-        consiste na composição de 6 blocos de apartamentos, cada bloco possuindo térreo com espaços de academia, salão de festas e 3 andares
-        residenciais com 6 unidades cada, com habitações de 1 e 2 dormitórios, totalizando 108 apartamentos. Os blocos são orientados de
-        forma a maximizar o melhor aproveitamento do percurso solar ao longo de todo ano.
+        Residencial Alvorada is the result of the academic work from the final project discipline at Universidade São Francisco. The project
+        consists of the composition of 6 apartment blocks, each block having a ground floor with gym spaces, party room and 3 residential
+        floors with 6 units each, with 1 and 2 bedroom housing, totaling 108 apartments. The blocks are oriented to maximize the best use of
+        the solar path throughout the entire year.
       </div>
       <img src="/portfolio/imgs/alvorada/alvorada-entrada.webp" class="slide-x-r" alt="" />
     </div>
@@ -879,8 +875,8 @@
     </div>
     <div class="pagina-branco">
       <div class="descricao slide-y">
-        O trabalho foi uma oportunidade para o estudo de diferentes tipos de representação, desde o desenho técnico de plantas. cortes e
-        elevações até as ilustrações em 3D de vários ângulos e a planta humanizada dos apartamentos.
+        The work was an opportunity to study different types of representation, from technical drawing of plans, sections and elevations to
+        3D illustrations from various angles and the humanized floor plan of the apartments.
       </div>
       <div class="container">
         <img-comparison-slider class="slide-x-r">
@@ -895,32 +891,32 @@
     <div class="capa-projeto">
       <div class="projeto-nome slide-x-l">
         <p class="container2">
-          P A R Q U E<br />
-          T I E T Ê &nbsp;&nbsp; V I V O
+          T I E T Ê &nbsp;&nbsp; R I V E R<br />
+          A L I V E &nbsp;&nbsp; P A R K
         </p>
       </div>
       <img src="/portfolio/imgs/tfg/tfg-relevo-hidrografia.webp" class="slide-y" alt="" />
     </div>
     <div class="pagina-branco">
       <div class="descricao slide-y">
-        Este foi o projeto apresentado como Trabalho Final de Graduação (TFG) junto à Universidade São Francisco. Pelo estudo da história e
-        memória das águas da metrópole e através do levantamento das informações urbanísticas da região, o trabalho foi uma oportunidade de
-        reflexão sobre a cidade e sua relação com seus rios. O parque é imaginado num cenário onde o Rio Tietê é vivo, com sua mata ciliar
-        restaurada e com diversos equipamentos para desfrute da população.
+        This was the project presented as Final Graduation Work (TFG) at Universidade São Francisco. Through the study of the history and
+        memory of the metropolis' waters and through the survey of urban information of the region, the work was an opportunity for
+        reflection on the city and its relationship with its rivers. The park is imagined in a scenario where the Tietê River is alive, with
+        its riparian forest restored and with various equipment for the population's enjoyment.
       </div>
       <img src="/portfolio/imgs/tfg/tfg-planta.webp" class="slide-x-r" alt="" />
     </div>
     <div class="pagina-branco">
       <div class="descricao slide-y">
-        Vista do rio restaurado e navegável. Floresta urbana de espécies nativas da Mata Atlântica. A ideia do parque palco do teatro da
-        vida na cidade.
+        View of the restored and navigable river. Urban forest of native Atlantic Forest species. The idea of the park as stage of the
+        theater of life in the city.
       </div>
       <img src="/portfolio/imgs/tfg/tfg-aerea.webp" class="slide-x-l" alt="" />
     </div>
     <div class="pagina-branco">
       <div class="descricao slide-y">
-        Amplas áreas de convívio que valorizam os pedestres e ciclistas, com diversos atrativos culturais rodeados pela natureza exuberante
-        em meio à metrópole.
+        Large gathering areas that value pedestrians and cyclists, with various cultural attractions surrounded by exuberant nature in the
+        midst of the metropolis.
       </div>
       <img src="/portfolio/imgs/tfg/tfg-caminho.webp" class="slide-x-r" alt="" />
     </div>
@@ -931,12 +927,12 @@
     <div class="cta-section">
       <div class="container2">
         <div class="cta-content slide-y">
-          <div class="cta-title">Cada projeto é uma oportunidade única — vamos criar o próximo juntos?</div>
-          <div class="cta-subtitle">Entre em contato para discutirmos seu próximo projeto arquitetônico</div>
+          <div class="cta-title">Every project is a unique opportunity — let's create the next one together?</div>
+          <div class="cta-subtitle">Get in touch to discuss your next architectural project</div>
           <div class="cta-buttons">
             <a href="mailto:duda@schilling.arq.br" class="cta-button primary">
               <img src="/portfolio/imgs/icons/mail.svg" alt="Email" />
-              ENVIAR EMAIL
+              SEND EMAIL
             </a>
             <a href="https://wa.me/5519920063047" target="_blank" class="cta-button secondary">
               <img src="/portfolio/imgs/icons/phone.svg" alt="WhatsApp" />
@@ -945,8 +941,8 @@
           </div>
           <div class="cta-info">
             <p>Eduardo Luiz Schilling</p>
-            <p>Arquiteto e Urbanista</p>
-            <p>Vinhedo/SP • <a href="https://schilling.arq.br">www.schilling.arq.br</a></p>
+            <p>Architect and Urbanist</p>
+            <p>Vinhedo/SP, Brazil • <a href="https://schilling.arq.br">www.schilling.arq.br</a></p>
           </div>
         </div>
       </div>
