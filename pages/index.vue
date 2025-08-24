@@ -89,9 +89,17 @@
         <CCard class="card" name="Vera Lucia Schilling" photo="/contatos/vera.jpg" crea="5061747230" cau="A13144-0" inmemorian="true">
           arquiteta e urbanista
         </CCard>
-        <CCard class="card" name="Eduardo Luiz Schilling" title="arquiteto e urbanista" photo="/contatos/eduardo.jpg" phone="19920063047">
+        <CCard
+          class="card"
+          name="Eduardo Luiz Schilling"
+          title="arquiteto e urbanista"
+          photo="/contatos/eduardo.jpg"
+          phone="19920063047"
+          link="https://schilling.arq.br/portfolio"
+        >
           arquiteto e urbanista<br />químico
         </CCard>
+
         <CCard class="card" name="Mauro Santos" photo="/contatos/mauro.jpg" crea="0601524770" phone="19992755844"> engenheiro civil </CCard>
       </div>
     </div>

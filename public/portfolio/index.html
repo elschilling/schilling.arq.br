@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <style>
       * {
         margin: 0;
@@ -150,6 +151,11 @@
       .contato p img {
         padding-right: 10px;
       }
+      .contato a {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+      }
       .container-software {
         display: flex;
         margin: 10px;
@@ -181,6 +187,108 @@
       .skill-bar-off {
         background: #fff;
       }
+
+      /* Three.js Section Styles */
+      .threejs-section {
+        background: #f8f8f8;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 0;
+      }
+
+      .threejs-container {
+        width: 100%;
+        max-width: 1200px;
+        height: 70vh;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      #sun-canvas {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .threejs-controls {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        min-width: 200px;
+        font-size: 12px;
+        backdrop-filter: blur(10px);
+      }
+
+      .threejs-controls h4 {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .control-group {
+        margin-bottom: 10px;
+      }
+
+      .control-group label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        font-weight: 500;
+      }
+
+      .control-group input[type='range'] {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      .control-group input[type='date'],
+      .control-group input[type='time'] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .sun-info {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 10px;
+        min-width: 150px;
+        font-size: 12px;
+        backdrop-filter: blur(10px);
+      }
+
+      .sun-info h4 {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 14px;
+      }
+
+      .info-item {
+        margin-bottom: 5px;
+        color: #555;
+      }
+
+      .threejs-iframe {
+        width: 100%;
+        height: 80vh;
+        border: none;
+        border-radius: 15px;
+      }
+
       .slide-x-r {
         animation: linear slide-x-r both;
         animation-range: entry 5% cover 30%;
@@ -260,10 +368,157 @@
         }
         .perfil {
           margin: 5px;
+        }
+        .projeto-nome {
+          bottom: 500px;
+          z-index: 10;
+        }
+        .threejs-controls,
+        .sun-info {
+          position: relative;
+          margin: 10px;
+          width: calc(100% - 20px);
+        }
+        .threejs-container {
+          height: 50vh;
+          margin: 0 10px;
+        }
       }
-      .projeto-nome {
-        bottom: 500px;
-        z-index: 10;
+
+      .cta-section {
+        background: linear-gradient(135deg, #222 0%, #555 100%);
+        color: #fff;
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cta-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        opacity: 0.3;
+      }
+
+      .cta-content {
+        position: relative;
+        z-index: 1;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .cta-title {
+        font-size: 2.5em;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .cta-subtitle {
+        font-size: 1.2em;
+        font-weight: 300;
+        margin-bottom: 40px;
+        opacity: 0.9;
+        line-height: 1.5;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        transition: all 0.3s ease;
+        min-width: 180px;
+        justify-content: center;
+      }
+
+      .cta-button img {
+        width: 20px;
+        height: 20px;
+        filter: brightness(0) invert(1);
+      }
+
+      .cta-button.primary {
+        background: #fff;
+        color: #222;
+      }
+
+      .cta-button.primary:hover {
+        background: #f0f0f0;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .cta-button.secondary {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+
+      .cta-button.secondary:hover {
+        background: #fff;
+        color: #222;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+      }
+
+      .cta-button.secondary:hover img {
+        filter: brightness(0);
+      }
+
+      .cta-info {
+        font-size: 0.9em;
+        opacity: 0.8;
+        font-weight: 300;
+      }
+
+      .cta-info p {
+        margin: 5px 0;
+      }
+      .cta-info a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .cta-info a:hover {
+        text-decoration: underline;
+      }
+      /* Mobile responsiveness */
+      @media only screen and (max-width: 600px) {
+        .cta-title {
+          font-size: 1.8em;
+        }
+
+        .cta-subtitle {
+          font-size: 1em;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .cta-button {
+          width: 100%;
+          max-width: 280px;
+        }
       }
     </style>
   </head>
@@ -285,8 +540,12 @@
           <div class="contato">
             <p><img src="/portfolio/imgs/icons/local.svg" alt="" />Vinhedo/SP</p>
             <p><img src="/portfolio/imgs/icons/mail.svg" alt="" />duda@schilling.arq.br</p>
-            <p><img src="/portfolio/imgs/icons/phone.svg" alt="" />19 9 2000 4846</p>
-            <p><img src="/portfolio/imgs/icons/site.svg" alt="" />www.schilling.arq.br</p>
+            <a href="https://wa.me/5519920063047" target="_blank"
+              ><p><img src="/portfolio/imgs/icons/phone.svg" alt="" />19 9 2006 3047</p></a
+            >
+            <a href="https://schilling.arq.br" target="_blank"
+              ><p><img src="/portfolio/imgs/icons/site.svg" alt="" />www.schilling.arq.br</p></a
+            >
             <p><img src="/portfolio/imgs/icons/birth.svg" alt="" />01/02/1988</p>
           </div>
           <div>
@@ -453,9 +712,39 @@
               <div class="skill-bar skill-bar-off"></div>
             </div>
           </div>
+          <div class="container-software">
+            <div class="nome-software">Three.js</div>
+            <div class="skill">
+              <p>Intermediário</p>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-on"></div>
+              <div class="skill-bar skill-bar-off"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Three.js Sun Position Section -->
+    <div class="threejs-section">
+      <div class="container2">
+        <div class="perfil-fundo slide-y">
+          <div class="perfil-titulo">SIMULAÇÃO SOLAR INTERATIVA</div>
+          Aplicação desenvolvida em Three.js para visualização da posição do sol em tempo real. Esta ferramenta permite a análise da
+          incidência solar ao longo do dia e do ano, sendo útil para estudos de orientação solar em projetos arquitetônicos. Você pode
+          ajustar a data, horário e localização para observar como a posição do sol afeta a iluminação natural.
+        </div>
+      </div>
+
+      <iframe
+        class="threejs-iframe"
+        src="https://vereadores40.vercel.app/"
+        title="3D Architectural Visualization"
+        allow="accelerometer; gyroscope"
+      >
+      </iframe>
+    </div>
+
     <div class="capa-projeto">
       <div class="projeto-nome slide-x-l">
         <p class="container2">
@@ -590,6 +879,30 @@
     </div>
     <div class="pagina-branco">
       <img src="/portfolio/imgs/tfg/tfg-criancas.webp" class="slide-x-l" alt="" />
+    </div>
+
+    <div class="cta-section">
+      <div class="container2">
+        <div class="cta-content slide-y">
+          <div class="cta-title">Cada projeto é uma oportunidade única — vamos criar o próximo juntos?</div>
+          <div class="cta-subtitle">Entre em contato para discutirmos seu próximo projeto arquitetônico</div>
+          <div class="cta-buttons">
+            <a href="mailto:duda@schilling.arq.br" class="cta-button primary">
+              <img src="/portfolio/imgs/icons/mail.svg" alt="Email" />
+              ENVIAR EMAIL
+            </a>
+            <a href="https://wa.me/5519920063047" target="_blank" class="cta-button secondary">
+              <img src="/portfolio/imgs/icons/phone.svg" alt="WhatsApp" />
+              WHATSAPP
+            </a>
+          </div>
+          <div class="cta-info">
+            <p>Eduardo Luiz Schilling</p>
+            <p>Arquiteto e Urbanista</p>
+            <p>Vinhedo/SP • <a href="https://schilling.arq.br">www.schilling.arq.br</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

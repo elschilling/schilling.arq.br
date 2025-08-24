@@ -1,11 +1,22 @@
 <template>
   <div class="w-[212px] h-[290px] bg-black/60 rounded-b-[10px] mt-[120px] mix-blend-luminosity hover:mix-blend-normal">
-    <img :src="props.photo" alt="" class="rounded-full -mt-[106px]" />
-    <div class="flex justify-center items-center text-white text-[16px] font-normal tracking-normal">
-      {{ props.name }}
-    </div>
-    <div class="flex justify-center items-center text-white text-[14px] font-extralight tracking-normal -mt-2 text-center leading-5">
-      <slot></slot>
+    <a v-if="props.link" :href="props.link" target="_blank">
+      <img :src="props.photo" alt="" class="rounded-full -mt-[106px]" />
+      <div class="flex justify-center items-center text-white text-[16px] font-normal tracking-normal">
+        {{ props.name }}
+      </div>
+      <div class="flex justify-center items-center text-white text-[14px] font-extralight tracking-normal -mt-2 text-center leading-5">
+        <slot></slot>
+      </div>
+    </a>
+    <div v-else>
+      <img :src="props.photo" alt="" class="rounded-full -mt-[106px]" />
+      <div class="flex justify-center items-center text-white text-[16px] font-normal tracking-normal">
+        {{ props.name }}
+      </div>
+      <div class="flex justify-center items-center text-white text-[14px] font-extralight tracking-normal -mt-2 text-center leading-5">
+        <slot></slot>
+      </div>
     </div>
     <div class="flex flex-col justify-center items-center text-white text-[14px] font-extralight tracking-normal mt-5">
       <p v-if="props.crea" class="leading-tight">
@@ -28,7 +39,7 @@
 </template>
 
 <script setup>
-const props = defineProps(['name', 'photo', 'cau', 'crea', 'email', 'phone', 'inmemorian'])
+const props = defineProps(['name', 'photo', 'cau', 'crea', 'email', 'phone', 'inmemorian', 'link'])
 
 function showTooltip(flag) {
   switch (flag) {
