@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --color-logo-verde: #536c53;
+  --color-logo-vermelho: #de8787;
+}
